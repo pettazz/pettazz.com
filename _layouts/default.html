@@ -8,8 +8,23 @@
     <link href="http://feeds2.feedburner.com/pettazz" rel="alternate" title="Nick Pettazzoni" type="application/atom+xml">
     <link href='/images/favicon.ico' rel='shortcut icon' type='image/ico'>
 
-    <script type="text/javascript">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
+    <script type="text/javascript">
+      //add a Read More link to the frontpage post
+      $(document).ready(function(){
+        var iter = 0;
+        $('article.frontpage p').each(function(i, e){
+          if(iter > 0){
+            $(this).hide();
+          }
+          iter++;
+        });
+        var link = $('article.frontpage h2 a').attr('href');
+        $('article.frontpage').append('<p><a href="' + link + '">Read More</a></p>');
+      });
+
+      //Google Analytics
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-32768442-1']);
       _gaq.push(['_trackPageview']);
