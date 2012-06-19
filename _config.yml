@@ -1,4 +1,9 @@
-auto: true
-markdown: rdiscount
-permalink: /:year/:month/:day/:title
-rdiscount extensions: [smart]
+---
+exclude: []
+markdown: redcarpet
+redcarpet:
+    extensions: ['smart', 'no_intraemphasis', 'tables']
+permalink: pretty
+pygments: true
+safe: false
+host: pettazz.github.com
