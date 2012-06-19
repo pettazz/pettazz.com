@@ -9,8 +9,8 @@ layout: nil
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://{{ site.host }}/</id>
  <author>
-   <name>Tate Johnson</name>
-   <email>tate@tatey.com</email>
+   <name>Nick Pettazzoni</name>
+   <email>pettazz@gmail.com</email>
  </author>
  {% for post in site.posts limit:10 %}
    <entry>
