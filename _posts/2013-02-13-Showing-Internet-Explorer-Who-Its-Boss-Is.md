@@ -8,7 +8,7 @@ One desktop and three [VirtualBoxes](https://www.virtualbox.org/) later, I had b
 
 But this left me back at the original problem: IE, if left to its own devices long enough, will completely shit itself. To death. In comes the [vboxmanage command-line tool](http://www.virtualbox.org/manual/ch08.html) and a little bit of cron-based magic to save the day. 
 
-{% highlight shell %}
+{% highlight bash %}
     #!/bin/bash
      
     function reset_vm {
