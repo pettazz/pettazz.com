@@ -14,7 +14,7 @@
       //add a Read More link to the frontpage post
       $(document).ready(function(){
         var iter = 0;
-        $('article.frontpage p').each(function(i, e){
+        $('article.frontpage').children('p, div').each(function(i, e){
           if(iter > 0){
             $(this).hide();
           }
