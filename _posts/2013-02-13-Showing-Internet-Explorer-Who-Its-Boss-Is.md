@@ -31,7 +31,7 @@ reset_vm "Win7 ff,chrome"
 echo -e "\e[0;32m\n\ndone.\n\n\e[00m"
 {% endhighlight %}
 
-[Check it out on gist](https://gist.github.com/pettazz/4947662)
+[Check it out on Gist](https://gist.github.com/pettazz/4947662)
 
 Every night at ```@midnight```, each of the "active" VMs is destroyed, and a new instance is created by cloning the appropriate "Base" VM. It's not quite as fresh as an instance Sauce would serve up, but it definitely solves the IE shenanigans that have been slowly eating away at my sanity for the past few months. 
 
