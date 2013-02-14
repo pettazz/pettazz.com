@@ -9,26 +9,26 @@ One desktop and three [VirtualBoxes](https://www.virtualbox.org/) later, I had b
 But this left me back at the original problem: IE, if left to its own devices long enough, will completely shit itself. To death. In comes the [vboxmanage command-line tool](http://www.virtualbox.org/manual/ch08.html) and a little bit of cron-based magic to save the day. 
 
 {% highlight bash %}
-    #!/bin/bash
-     
-    function reset_vm {
-        echo -e "\e[0;32m\n\nresetting $1...\n\n\e[00m"
-        echo -e "\e[0;34mpoweroff\e[00m"
-        vboxmanage controlvm "$1 - active" poweroff
-        sleep 5s
-        echo -e "\e[0;34munregister\e[00m"
-        vboxmanage unregistervm "$1 - active" --delete
-        echo -e "\e[0;34mclone\e[00m"
-        vboxmanage clonevm "$1 Base" --name="$1 - active" --register
-        echo -e "\e[0;34mstart\e[00m"
-        vboxmanage startvm "$1 - active"
-        echo -e "\e[0;32m\n\ndone.\n\n\e[00m"
-    }
-    reset_vm "Win7 ie8"
-    reset_vm "Win7 ie9"
-    reset_vm "Win7 ff,chrome"
-     
+#!/bin/bash
+ 
+function reset_vm {
+    echo -e "\e[0;32m\n\nresetting $1...\n\n\e[00m"
+    echo -e "\e[0;34mpoweroff\e[00m"
+    vboxmanage controlvm "$1 - active" poweroff
+    sleep 5s
+    echo -e "\e[0;34munregister\e[00m"
+    vboxmanage unregistervm "$1 - active" --delete
+    echo -e "\e[0;34mclone\e[00m"
+    vboxmanage clonevm "$1 Base" --name="$1 - active" --register
+    echo -e "\e[0;34mstart\e[00m"
+    vboxmanage startvm "$1 - active"
     echo -e "\e[0;32m\n\ndone.\n\n\e[00m"
+}
+reset_vm "Win7 ie8"
+reset_vm "Win7 ie9"
+reset_vm "Win7 ff,chrome"
+ 
+echo -e "\e[0;32m\n\ndone.\n\n\e[00m"
 {% endhighlight %}
 
 [Check it out on gist](https://gist.github.com/pettazz/4947662)
