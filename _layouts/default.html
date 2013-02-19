@@ -14,9 +14,14 @@
       //add a Read More link to the frontpage post
       $(document).ready(function(){
         var iter = 0;
+        var imgStopFlag = false;
         $('article.frontpage').children('p, div').each(function(i, e){
           if(iter > 0){
-            $(this).hide();
+            if(imgStopFlag && ( $(this).children().length == 1 && $(this).children('img').length )){
+              imgStopFlag = true;
+            }else{
+              $(this).hide();
+            }
           }
           iter++;
         });
