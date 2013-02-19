@@ -1,6 +1,7 @@
 ---
 layout: post
-published: false
+published: true
+page.title: Doing Selenium Part II: Revenge of the Ballmer
 ---
 
 After using the solution I detailed in [my last post](pettazz.com/2013/02/13/Showing-Internet-Explorer-Who-Its-Boss-Is/) for about a week, I found that more often than not, even with spawning entirely new VMs every night, on one or both of the IE machines, while a test was running, iexplore.exe would be using 99% CPU. Under that kind of pressure, a test that normally takes about 46 seconds on Chrome (with another test running in Firefox on the same machine, no less) would take over five minutes on IE 8. No, seriously. I have actual data this time. Didn't see that coming, did you?
@@ -14,9 +15,49 @@ My first thought after seeing occasional 100% usage of all four cores using htop
 
 First, my Base images would have to be something useable by QEMU; I needed to convert them from VirtualBox .vdi's to .qcow's, but I was also worried about keeping the originals in case I completely boned this new setup and had to revert. This was accomplished easily enough by running these for each VM:
 
-    VBoxManage clonehd "Win7 ie8 Base.vdi" "Win7ie8Base.img" --format RAW
-    qemu-img convert -f raw Win7ie8Base.img -O qcow2 Win7ie8Base.qcow
-    rm Win7ie8Base.img
+{% highlight bash %}
+VBoxManage clonehd "Win7 ie8 Base.vdi" "Win7ie8Base.img" --format RAW
+qemu-img convert -f raw Win7ie8Base.img -O qcow2 Win7ie8Base.qcow
+rm Win7ie8Base.img
+{% endhighlight %}
 
+Next, my nightly reset script would need a little attention. The fact that QEMU is essentially an entirely command-line based tool made this even easier.
 
+{% highlight bash %}
+#!/bin/bash
+ 
+function reset_vm {
+    echo "resetting $1..."
+ 
+    cd /home/pettazz/VMs/
+ 
+    if [ -a $1.pid ]
+    then
+        echo "killing existing VM pid:"
+        echo `cat $1.pid`
+        echo -e "\n"
+        kill -9 `cat $1.pid`
+        rm $1.pid
+    fi 
+ 
+    rm $1Active.qcow
+ 
+    cp -v $1Base.qcow $1Active.qcow
+ 
+    kvm -m 2048 -usbdevice tablet -hda $1Active.qcow -vga std -redir tcp:$2::$2 > $1.log &
+    echo $! > $1.pid
+    echo -e "done.\n\n\n"
+}
+ 
+reset_vm "Win7ie8" 5555
+reset_vm "Win7ie9" 5556
+reset_vm "Win7ffchrome" 5557
+{% endhighlight %}
 
+[https://gist.github.com/pettazz/4990397](Check it out on Gist)
+
+And suddenly I was the proud owner of three VMs running in QEMU, the solution to all my life's problems. 
+
+![IE 8: Still trying desperately to consume your every want and desire.](http://i.imgur.com/aWzEto7.png)
+
+Oh, son of a _bitch_. 
