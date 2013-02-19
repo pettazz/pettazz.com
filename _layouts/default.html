@@ -17,7 +17,7 @@
         var imgStopFlag = false;
         $('article.frontpage').children('p, div').each(function(i, e){
           if(iter > 0){
-            if(imgStopFlag && ( $(this).children().length == 1 && $(this).children('img').length )){
+            if(!imgStopFlag && ( $(this).children().length == 1 && $(this).children('img').length == 1)){
               imgStopFlag = true;
             }else{
               $(this).hide();
