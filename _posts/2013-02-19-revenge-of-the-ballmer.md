@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+pygments: true
 page.title: Doing Selenium Part II: Revenge of the Ballmer
 ---
 
