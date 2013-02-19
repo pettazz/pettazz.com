@@ -1,0 +1,22 @@
+---
+layout: post
+published: false
+---
+
+After using the solution I detailed in [my last post](pettazz.com/2013/02/13/Showing-Internet-Explorer-Who-Its-Boss-Is/) for about a week, I found that more often than not, even with spawning entirely new VMs every night, on one or both of the IE machines, while a test was running, iexplore.exe would be using 99% CPU. Under that kind of pressure, a test that normally takes about 46 seconds on Chrome (with another test running in Firefox on the same machine, no less) would take over five minutes on IE 8. No, seriously. I have actual data this time. Didn't see that coming, did you?
+
+![IE 8: Carefully crafted to destroy all your hopes and dreams!](http://i.imgur.com/z3BG5Vz.png)
+
+
+I'll let you digest that for a few minutes. It's okay, as you can see, I've got _plenty_ of time to wait. Clearly, this is not going to work once we move on to running more than four tests. I investigated some possibile causes in, because I am an inherently lazy sack, order from least difficult to fix to most. 
+
+My first thought after seeing occasional 100% usage of all four cores using htop during test runs was that maybe my desktop and/or VirtualBox was having trouble handling three VMs at once, though the fact that the Chrome/Firefox VM never seemed to run into this kind of trouble was a little more than unsettling. I found a [number of possible solutions](http://home.icequake.net/~nemesis/blog/index.php/archives/321) (yes, including an OS-less dummy machine for some reason), but found no real success. So I tried replacing VirtualBox entirely, and switching all my VMs to hardcore mode (also known as [QEMU](http://wiki.qemu.org/Main_Page). It actually went a lot better than I expected.
+
+First, my Base images would have to be something useable by QEMU; I needed to convert them from VirtualBox .vdi's to .qcow's, but I was also worried about keeping the originals in case I completely boned this new setup and had to revert. This was accomplished easily enough by running these for each VM:
+
+    VBoxManage clonehd "Win7 ie8 Base.vdi" "Win7ie8Base.img" --format RAW
+    qemu-img convert -f raw Win7ie8Base.img -O qcow2 Win7ie8Base.qcow
+    rm Win7ie8Base.img
+
+
+
