@@ -15,7 +15,7 @@
       $(document).ready(function(){
         var iter = 0;
         var imgStopFlag = false;
-        $('article.frontpage').children('p, div').each(function(i, e){
+        $('article.frontpage').children('p, div, ul').each(function(i, e){
           if(iter > 0){
             if(!imgStopFlag && ( $(this).children().length == 1 && $(this).children('img').length == 1)){
               imgStopFlag = true;
