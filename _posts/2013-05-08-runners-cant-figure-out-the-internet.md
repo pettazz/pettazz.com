@@ -10,13 +10,13 @@ In my quest to acquire miles, I am also looking for new and exciting variations 
 
 Free Healthcare Covers Shin Splints, Right?:
 
-![800 mile walk into Canada](http://i.imgur.com/3bQiWz6.png "For those looking for an easy beginner's run.")
+![800 mile walk into Canada](http://i.imgur.com/zikCt0N.png "For those looking for an easy beginner's run.")
 
 and
 
 The Impossible Polygon:
 
-![Impossible 13 mile run map](http://i.imgur.com/m4HShNh.jpg "Also known as: How the hell do I get home?")
+![Impossible 13 mile run map](http://i.imgur.com/FByF3Il.jpg "Also known as: How the hell do I get home?")
 
 ![Doc Brown](http://i.imgur.com/HMcYhND.jpg "Where we're going, we... Well, actually, I'm pretty sure we do still need roads.")
 
