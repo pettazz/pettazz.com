@@ -6,8 +6,6 @@ title: "Wait I Have To Think of A Title Too?"
 
 Waiting for a new post from me is like waiting for your ; I wouldn't recommend holding your breath while doing so. I've been an odd combination of busy, bored, motivated, and lazy all at once lately, and I've tried to keep writing things as much as possible, though I don't think anything to come out of me lately would fit well here. Instead of promising more frequent posts, which everyone knows I won't deliver on, I'll list a few of the topics I've been messing around with that *would* work well here, sort of as an incentive to myself to actually make them ready for public consumption and get them posted.
 
-So here they are in no particular order:
-
 
 >####TVRobot####
 He's still here and has been happily chugging away procuring more distractions for my retinas than I have hours in the day to watch. His SMS API has grown more complex, and some of his methods for cleaning up downloaded files and finding good downloads have gotten a bit more intelligent, but he's still everyone's favorite lovable robot buddy.
