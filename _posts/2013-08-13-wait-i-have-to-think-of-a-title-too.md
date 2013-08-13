@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: "Wait I Have To Think of A Title Too?"
 ---
 
