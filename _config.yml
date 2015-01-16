@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            pettazz.com
+title:            pettazz'n
 locale:           en_US
 url:              http://pettazz.com
 host:             pettazz.com
@@ -34,14 +34,14 @@ owner:
   twitter: pettazz
   facebook: pettazz
   google:
-    plus: pettazz
+    plus: NickPettazzoni
     analytics: UA-32768442-1
     verify: 
     ad-client: 
     ad-slot: 
   bing-verify: 
   github: pettazz
-  stackoverflow: http://stackoverflow.com/users/431223/pettazz
+  stackoverflow: 431223/pettazz
   linkedin: pettazz
   instagram: pettazz
   lastfm: noodpope
