@@ -3,6 +3,8 @@ layout: post
 published: true
 pygments: true
 title: "Doing Selenium Part II: Revenge of the Ballmer"
+tags: [code, selenium, projects, bash, testing, automation, QA, IE, Ballmer, VMs]
+comments: true
 ---
 
 After using the solution I detailed in [my last post](pettazz.com/2013/02/13/Showing-Internet-Explorer-Who-Its-Boss-Is/) for about a week, I found that more often than not, even with spawning entirely new VMs every night, on one or both of the IE machines, while a test was running, iexplore.exe would be using 99% CPU. Under that kind of pressure, a test that normally takes about 46 seconds on Chrome (with another test running in Firefox on the same machine, no less) would take over five minutes on IE 8. No, seriously. I have actual data this time. Didn't see that coming, did you?

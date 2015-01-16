@@ -2,6 +2,8 @@
 layout: post
 published: true
 title: "Runners Can't Figure Out The Internet"
+tags: [lols, fun, personal, running, maps]
+comments: true
 ---
 
 If you're friends with me on Facebook, you know that I like to run and I'm trying to do more of it these days. You would know this, because the Nike+ Running app I use to track distance, time, and pace of my runs likes to force-feed your news feed with all the same details whether I ask it to or not. You might assume that disabling the automatic sharing options in the app preferences, along with never opening the "SHARE THIS RUN!" pane would result in my runs never being shared. But you would be completely wrong. Idiot. You obviously have no idea how the Nike Social Marketing strategy works.

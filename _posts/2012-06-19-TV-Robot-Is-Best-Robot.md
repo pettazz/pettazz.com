@@ -1,6 +1,8 @@
 ---
 layout: post
 title: TV Robot Is Best Robot
+tags: [TVRobot, code, python, projects, PLEX]
+comments: true
 ---
 
 Once upon a time, I was the proud owner of a [PLEX](http://plexapp.com) Server, [Transmission](http://www.transmissionbt.com/) Server, and a fondness for a whole bunch of TV shows that were on at different (and sometimes the same) times and days out of any given week. I also had a fast internet connection, but no cable TV. It was an experiment in saving money by not spending it on roughly 9001 channels that my roommate and I would never watch, just to get the total of 5 hours per week of TV we actually wanted to see. And it wasn't going well. I wouldn't say that memory skills are my strong points, so remembering to actually go look for a show on The Pirate Bay after its air time, and maybe even checking back again later if there isn't a useful candidate yet, was not going particularly well, to say nothing of the trials and suffering encountered in trying to move the completed files to the PLEX server's watched folders (also on a different physical machine) so it would pick them up for streaming. I knew there was a Transmission RPC python module, and had caught the general idea of python Fabric. There was definitely a way to make this easier. 

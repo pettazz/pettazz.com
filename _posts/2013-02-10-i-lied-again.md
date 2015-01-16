@@ -1,6 +1,8 @@
 ---
 layout: post
 published: true
+tags: [personal, blag]
+comments: true
 ---
 
 But this time will be different, I promise (*maybe*)

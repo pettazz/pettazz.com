@@ -3,6 +3,8 @@ layout: post
 published: true
 pygments: true
 title: "Doing Selenium Part III: Who Needs Hover Anyway?"
+tags: [code, selenium, projects, bash, testing, automation, QA, IE, Ballmer, VMs]
+comments: true
 ---
 
 A dark cloud had surrounded me, blocking out the sun. Every move I made only seemed to make the darkness more dense and take the bright rays of hope farther from my reach. My situation was becoming more and more claustrophobic and dire every day. I knew I wouldn't be able to go much longer on in this way, and was determined that if this truly was the end, I wouldn't be going out without a fight. So I tried something. Something foolish and crazy; something dangerous and possibly indicative of a serious mental condition. I tried the only option I had left. 
