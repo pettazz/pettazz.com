@@ -1,9 +1,59 @@
----
-exclude: []
-markdown: redcarpet
-redcarpet:
-    extensions: ['smart', 'no_intraemphasis', 'tables']
-permalink: pretty
-pygments: true
-safe: false
-host: pettazz.com
+# Site wide configuration
+
+title:            pettazz.com
+locale:           en_US
+url:              http://pettazz.com
+host:             pettazz.com
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Nick Pettazzoni
+  avatar: bio-photo.jpg
+  bio: "I liek chocolate milk."
+  email: pettazz@gmail.com
+  disqus-shortname: pettazz
+  twitter: pettazz
+  facebook: pettazz
+  google:
+    plus: pettazz
+    analytics: UA-32768442-1
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: pettazz
+  stackoverflow: http://stackoverflow.com/users/431223/pettazz
+  linkedin: pettazz
+  instagram: pettazz
+  lastfm: noodpope
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: pettazz
+  dribbble: #username
+  youtube: pettazz
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

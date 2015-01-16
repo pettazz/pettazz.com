@@ -1,49 +1,77 @@
----
-layout: default
----
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
 
-<article>
-  <time datetime="{{ page.date | xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time>
-  <h2>{{ page.title }}</h2>
-  {{ content }}
-</article>
-<hr>
-<!-- AddThis Button BEGIN -->
-<div id="social" class="addthis_toolbox addthis_default_style addthis_32x32_style">
-	<a class="addthis_button_facebook"></a>
-	<a class="addthis_button_twitter"></a>
-	<a class="addthis_button_hackernews"></a>
-	<a class="addthis_button_reddit"></a>
-	<a class="addthis_button_compact"></a>
-	<a class="addthis_counter addthis_bubble_style"></a>
-</div>
-<script type="text/javascript">var addthis_config = {};</script>
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fe0a4aa62acec32"></script>
-<!-- AddThis Button END -->
-<div id="paginator">
-  {% if page.previous %}
-    <a id="left" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Older</a>
-  {% endif %}
-  {% if page.next %}
-    <a id="right" href="{{ page.next.url }}" title="{{ page.next.title }}">Newer &rarr;</a>
-  {% endif %}
-</div>
-<hr>
-<div id="comments">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'pettazz'; // required: replace example with your forum shortname
+<body class="post">
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
-</div>
-{% include footer.html %}
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      {% if page.link %}
+        <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
+      {% else %}
+        <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+      {% endif %}
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      {{ content }}
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          {% include _author-bio.html %}
+        </div>
+        <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  {% if site.owner.disqus-shortname and page.comments == true %}
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  {% endif %}
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/">View all posts</a>)</small></h4>
+    <ul>
+    {% for post in site.related_posts limit:3 %}
+      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}	        
+
+</body>
+</html>
