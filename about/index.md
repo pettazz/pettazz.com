@@ -4,9 +4,9 @@ title: About
 tags: [about, personal]
 comments: true
 image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: fenway_night_from_bleachers.png
 ---
 
 I made a blag that I don't use very much. Maybe I'll update this page eventually.
+
+This blagoblag uses the [Minimal Mistakes Theme](http://mmistakes.github.io/minimal-mistakes).
