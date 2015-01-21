@@ -35,6 +35,10 @@
   <article class="page">
     <h1>{{ page.title }}</h1>
     <div class="article-wrap">
+      {% if page.share != false %}
+        <hr />
+        {% include _social-share.html %}
+      {% endif %}
       {{ content }}
     </div><!-- /.article-wrap -->
     {% if site.owner.disqus-shortname and page.comments == true %}
