@@ -3,6 +3,7 @@ layout: page
 title: About
 tags: [about, personal]
 comments: true
+share: false
 image:
   feature: fenway_night_from_bleachers.png
 ---
