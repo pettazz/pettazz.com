@@ -181,7 +181,7 @@ Let's get this into a Data Template. In the Cacti console, click on Templates > 
 
 Once you click the Create button, You'll be back on a similar page, but now with a New link in the Data Source Item header. Click that and add each of your ``ds`` fields, making sure to click the Save button before clicking New again. *Trust me on this one.*
 
-Next up, we need a Graph Template. Head over to Templates > Graph Templates and click the Add link. Give it a name and Create, then click Add under Graph Template Items and choose the first ``ds`` from our Data Source from the last step. You can also set the details, like color and graph type, using an exceptionally unhelpful list of hex colors. Repeat this for each of the ``ds`` values you'll want to show on this graph.
+Next up, we need a Graph Template. Head over to Templates > Graph Templates and click the Add link. Give it a name and Create, then click Add under Graph Template Items and choose the first ``ds`` from our Data Source from the last step. You can also set the details, like color and graph type, using an exceptionally unhelpful list of hex colors. Repeat this for each of the ``ds`` values you'll want to show on this graph. Be sure to also add one for each ds with no changes except to set the type to LEGEND. Cacti will automagically add three GPRINT entries to display a min/max/avg value for each in the graph's legend.
 
 Now we can add this to our host (there are only like two things left, I promise). This one is easy. Go to Management > Devices, and click on localhost. In the Associated Graph Templates section, we can add our new one, then Save.
 
