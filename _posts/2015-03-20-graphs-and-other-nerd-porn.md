@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Graphs and Other Nerd Porn
 excerpt: "I got bored and decided I wanted to know how hot my server gets. Spoilers: I installed a bunch of shit and I still don't really know."
 tags: [blag, ubuntu, server, cacti, rrdtool, sensors, plex, linux, graphs, mysql]
