@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Graphs and Other Nerd Porn, Part 2
 excerpt: "Now that I can see how hot my server is, I want to see what the hell is causing it."
 tags: [blag, ubuntu, server, cacti, rrdtool, sensors, plex, linux, graphs, mysql]
@@ -13,7 +13,11 @@ image:
 Previously, on Graphs and Other Nerd Porn: [Part 1](/graphs-and-other-nerd-porn)
 {: .notice}
 
-So here I am, with a bunch of graphs showing me that once in a while on my server, the load average goes up and the temperature follows. Big damn deal. What good is any of this if I can't get some kind of insight into what's causing it? I mean, what am I going to do if the temp graph suddenly shows 80, go get an ice pack and put it on top of the power supply? I need some kind of visibility into what is generating all that load. Luckily, I think I know exactly what it is.
+So here I am, with a bunch of graphs showing me that once in a while on my server, the load average goes up and the temperature follows. Big damn deal. What good is any of this if I can't get some kind of insight into what's causing it? I mean, what am I going to do if the temp graph suddenly shows 80, go get an ice pack and put it on top of the power supply? 
+
+![Extra Cooling](http://i.imgur.com/VruQNty.jpg "Other solutions proved inconvenient.")
+
+I need some kind of visibility into what is generating all that load. Luckily, I think I know exactly what it is.
 
 [PLEX](http://plex.tv) is a marvel of modern technology. The days of converting videos to put on your iPod are over. Well, I mean, technically, they're still here. But we don't have to give a shit anymore. PLEX handles all the transcoding per client into a format that the device can play, all while maintaining quality. It's pretty spectacular, but also can be fairly resource intensive, since all this work gets done on the server in chunks as the video is being streamed to the client. ffmpeg doesn't natively support any real GPU accelerated transcoding, so this is all CPU-bound. Add onto this the fact that I hand out shared access to my PLEX server like a drunken grandma hands out full size candy bars on Halloween, and you have a recipe for some serious CPU load. 
 
