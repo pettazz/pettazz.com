@@ -200,3 +200,6 @@ Give it a little time to catch up, and everything will be alright, I promise.
 ### Why was I doing this again?
 
 So in the end, I now have a realtime graph to track temperatures within my server. I'm a solid 87% sure that my temp1 is the CPU sensor, and temp1_0 is a motherboard sensor, so this actually gives me a pretty good idea of what's going on inside my buddy Alonso. But it's not quite enough. I need to see what's causing the temperatures to spike, so what I really need is a graph that shows current PLEX sessions. ...I need more caffeine first.
+
+Next time, on Graphs and Other Nerd Porn: [Part 2](/graphs-and-other-nerd-porn-part-2)
+{: .notice}
