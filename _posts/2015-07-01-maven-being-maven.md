@@ -26,6 +26,7 @@ It's also important to note that the only method of communication we have betwee
 But due to the fact that we have multiple versions building at any given time and we can only interact with _this_ Jenkins instance via a json configuration file with very specific properties, Jenkins' ``$VERSION`` is just ``1.7``, while the actual pom version is ``1.7-SNAPSHOT`` or, within the repo as ``1.7-20150624.171502-17.jar``. Suddenly, ``$MAVEN_VERSION`` is a lot more complicated.
 
 And so we come to the entire reason for this post. How the hell do you tell mvn to just use the version that's _right there in the goddamned pom file_? After several hours of googling, apparently some options include: 
+
 - installing Groovy on the system and the Groovy Jenkins plugin, then writing a Groovy script to load and parse the pom and the Jenkins API to set the variables
 - writing a separate Jenkins job that only contains a python script to parse the xml file and trigger the actual job, passing the parsed values as build parameters 
 - blood magicks
