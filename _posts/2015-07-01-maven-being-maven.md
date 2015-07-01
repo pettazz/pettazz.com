@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Maven Being Maven
-excerpt: ""
+excerpt: "Fuck it, we'll do it in bash"
 tags: [blag, maven, java, Jenkins, build, mvn]
 comments: true
 image:
