@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Maven Being Maven
-excerpt: "Fuck it, we'll do it in bash"
+excerpt: "Maven? Adding totally unnecessary complexity to what should otherwise be a very simple task? No way!"
 tags: [blag, maven, java, Jenkins, build, mvn]
 comments: true
 image:
@@ -37,7 +37,7 @@ Links redacted to protect the innocent on StackOverflow, but I swear these are a
 Deeply unwilling to try any of these options (I mean, seriously, _Groovy_? Gross.), we developed a somewhat less sophisticated method:
 
 {% highlight bash %}
-MAVEN_VERSION=`head pom.xml | grep A -2 -B 2 | grep version | cut -d\> -f 2 | cut -d\< -f 1`
+MAVEN_VERSION=`head pom.xml | grep \<version | cut -d\> -f 2 | cut -d\< -f 1`
 {% endhighlight %}
 
 > Fuck it, we'll do it in bash
