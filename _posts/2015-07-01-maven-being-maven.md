@@ -19,7 +19,7 @@ mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get -Dartifact=com.pett
 
 It's also important to note that the only method of communication we have between Jenkins and Other Jenkins is a simple HTTP POST from the first to the second to /buildWithParams, and the only useful variable we can send over in that request is a very generic ``$VERSION``, which does not necessarily match up with the version in our pom file. For example, if we're building version 1.7 of our app, our pom usually looks like this:
 
-{% highlight xml %} 
+{% highlight xml %}
 <version>1.7-SNAPSHOT</version>
 {% endhighlight %}
 
