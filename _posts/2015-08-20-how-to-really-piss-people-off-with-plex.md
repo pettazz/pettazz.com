@@ -34,7 +34,7 @@ We'll also need the actual spaghetti video itself. I got mine from some Chrome e
 
 Once spaghetti.mp4 has been scanned and loaded by Plex, we can get its metadata id. Head over to the Plex web client and dig up your spaghetti video. On its details page, we can just grab the id from the url:
 
-{% highlight bash %} 
+{% highlight bash %}
 http://yourplexserver.com/manage/index.html#!/server/blahblahuuidblah/details/%2Flibrary%2Fmetadata%2F42554
 {% endhighlight %} 
 
@@ -54,7 +54,7 @@ I'm _almost_ surprised there isn't already a module to do this. The list at the 
 
 Telling Squid how to fuck with your users is surprisingly easy through the use of a configuration directive in its conf file (mine was located at ````/etc/squid3/squid.conf````):
 
-{% highlight bash %} 
+{% highlight bash %}
 #  TAG: url_rewrite_program
 #   Specify the location of the executable URL rewriter to use.
 #   Since they can perform almost any function there isn't one included.
@@ -70,7 +70,7 @@ There's probably a lesson in here somewhere about web security and trusting non-
 
 The venerable iptables tool lets us divert the pipe of incoming connections directly to Squid:
 
-{% highlight bash %} 
+{% highlight bash %}
 sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 32400 -j REDIRECT --to-port 3128
 {% endhighlight %} 
 
@@ -78,7 +78,7 @@ Where ````eth0```` is whatever network interface you're using, and ````32400````
 
 This is also easy to undo (but really why would you _ever_ stop the flow of spaghetti):
 
-{% highlight bash %} 
+{% highlight bash %}
 sudo iptables -t nat -D PREROUTING 1
 {% endhighlight %} 
 
