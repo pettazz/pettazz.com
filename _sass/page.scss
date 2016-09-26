@@ -228,12 +228,21 @@ $button-size: 1.5rem;
 	}
 	.post,
 	.page {
+		// this is actually for containers smaller than micro
+		// specifically: iphone portrait width
 		@include container;
-		@include grid(12,8);
-		@include prefix(12,1);
-		@include suffix(12,1);
+		@include grid(10,8);
+		@include prefix(10,1);
+		@include suffix(10,1);
 		margin-bottom: 2em;
+		@media #{$micro} {
+			// this is somewhere between "average" and the above "real small"
+			@include grid(10,8);
+			@include prefix(10,1);
+			@include suffix(10,1);
+		}
 		@media #{$small} {
+			//this is the "average" width
 			@include grid(12,8);
 			@include prefix(12,0);
 			@include suffix(12,0);
