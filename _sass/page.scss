@@ -418,7 +418,6 @@ $button-size: 1.5rem;
 	}
 	@media #{$x-large} {
 		@include grid(12,1.5);
-		@include prefix(12,2);
 	}
 }
 
