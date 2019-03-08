@@ -9,26 +9,24 @@ image:
   feature: tunnel.jpg
 ---
 
-In this week's installment of *Extremely Justified TBH Privacy Paranoia Theater*, we'll take a look at making sure one of the most popular download tools isn't broadcasting to everyone in between your ethernet port and your peers in Estonia what kind of weird torrents you're into. It's the type of thing that is frequently used for skirting copyright law and downloading media illegally, so please don't use my knowledge to break the law.
+In this week's installment of *Extremely Justified TBH Privacy Paranoia Theater*, we'll take a look at making sure one of the most popular download tools isn't broadcasting to everyone in between your ethernet port and your peers in Estonia what kind of weird torrents you're into. There are a lot of download tools out there, but Transmission is still one of the best thanks to its stability and almost unbelievably easy setup and usage. One downside is that it doesn't natively support VPNs or even binding to specific network interfaces, but luckily we can use a little bit of configuration wizardry to reach that end goal anyway. It's the type of thing that can be used for skirting copyright law and downloading media illegally, so please don't use my knowledge to break the law.
 
-Or do, honestly, what the fuck do I care?
+Or do; honestly, what the fuck do I care?
 
-There's plenty of reason not to trust anyone, including (especially) your ISP, with your private data when you don't have to even if everything you're doing is entirely above board. Comcast for example is known to use deep packet inspection to throttle different forms of content despite really, really promising they would never do anything like that. You pay for this internet pipe, it's your own damn business what you pump through it.
+There's plenty of reason not to trust anyone, including (especially) your ISP, with your private data when you don't have to, even if everything you're doing is entirely above board. Comcast for example is known to use deep packet inspection to throttle different forms of content despite really, really promising they would never do anything like that. You pay for this internet pipe, it's your own damn business what you pump through it.
 
 ## Prerequisites
 
-I did this on a Linux system running `systemd`, (that means 16.04+ if you're using Ubuntu) but it shouldn't be hard to modify to work with whatever obscure distro and/or service manager you're using. It also relies on `ufw`, but if you're using something else you probably already know how to do this anyway. As for installed versions, these were used at the time of this writing: 
+First of all, you'll need a VPN provider. I'm using [Private Internet Access](https://www.privateinternetaccess.com/), but anything compatible with OpenVPN will work just fine. Do check out [the EFF's extremely solid guide](https://ssd.eff.org/en/module/choosing-vpn-thats-right-you) on things to consider if you're shopping.
+
+I did this on a Linux system running `systemd`, (that means 16.04+ if you're using Ubuntu) but it shouldn't be hard to modify to work with whatever obscure distro and/or service manager you're using. It also relies on `ufw`, but if you're using something else for your firewall you probably already know how to do this anyway. As for installed versions, these were used at the time of this writing, lthough I've had this same setup working for well over a year before this, so it likely also works with older versions as well:
 
 - `transmission-daemon`: **2.84**
 - `openvpn`: **2.3.10**
 
-Although I've had this same setup working for well over a year before this, so it likely also works with older versions as well.
-
-You'll also need a VPN provider. I'm using [Private Internet Access](https://www.privateinternetaccess.com/), but anything compatible with OpenVPN will work just fine.
-
 A couple helpful tools you'll want to grab to verify that your changes are actually working:
 
-- `nethogs`: basically `top` for network activity, see what processes are sending how much traffic over which interfaces
+- `nethogs`: basically `top` for network activity, see what processes are sending how much traffic over which interfaces.
 
 # snips
 
