@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: "Tunnel Transmissions: Securing Transmission with OpenVPN"
 excerpt: "I remember thinking it would take a man six hundred years to tunnel through the internet to Sweden. Old openVPN did it in less than twenty."
 tags: [blag, openvpn, vpn, privacy, alonso, homelab, transmission]
