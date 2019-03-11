@@ -52,19 +52,13 @@ Found the interface, but not sure if the tunnel is active? First, check if the i
 ip link show up tun0 >/dev/null 2>/dev/null && echo "yup" || echo "nope"
 {% endhighlight %}
 
-Next, check that your public exit IP when using the tunnel interface is different than your normal one. You can expect:
+If it is, you'll see your tunnel exit IP address, entirely different than your typical external IP using:
 
 {% highlight bash %}
 curl ipinfo.io/ip
 {% endhighlight %}
 
-To give you an entirely different result than:
-
-{% highlight bash %}
-curl --interface tun0 ipinfo.io/ip
-{% endhighlight %}
-
-If not, you'll need to take another look at your OpenVPN Client.
+You can double check by shutting down OpenVPN with `sudo service openvpn stop` and running the curl command again, this time expecting to see your usual external address. If you see the same result whether or not OpenVPN is running, you'll need to take another look at your OpenVPN Client.
 
 #### I Always Forget This Part
 
@@ -236,6 +230,20 @@ ExecStart=/bin/bash -c "exec /usr/bin/transmission-daemon --no-portmap -f --bind
 
 And that's that. Now when you `sudo service openvpn start` your tunnel up, after a short delay, you should also see your Transmission daemon come back up. How can we tell whether it's working? 
 
+#### Is the Tunnel Split?
+
+Thanks to our custom route, the tunnel no longer takes over all your internet connections, only the ones that are explicitly meant to be sent over it, in what's called a split tunnel. So now, while OpenVPN is running, you can still expect to see your normal old external IP when you run:
+
+{% highlight bash %}
+curl ipinfo.io/ip
+{% endhighlight %}
+
+But also your exciting new tunnel exit IP from:
+
+{% highlight bash %}
+curl --interface tun0 ipinfo.io/ip
+{% endhighlight %}
+
 #### Do Torrents Connect?
 
 This one is pretty obvious, but a good first step. When you add a download, is it able to start working, or does it instead spit out errors not being able to connect to peers or trackers? 
@@ -248,7 +256,7 @@ Here's where `nethogs` comes in. Make sure you have an actually active download/
 
 #### Does Your Peer Address Match the VPN Exit Address
 
-TorGuard offers an extremely helpful tool to verify exactly this: [Check My Torrent IP](https://torguard.net/checkmytorrentipaddress.php). Copy the link URL of the giant download button and add it to your Transmission downloads as a magnet address. It'll immediately throw up an error in transmission, since it's not meant to actually download anything, but within a few seconds you should see results appear in the table, showing what peers and trackers see when they connect to your Transmission daemon. This IP address should exactly match your tunnel exit IP (you can double check with `curl --interface tun0 ipinfo.io/ip`).
+TorGuard offers an extremely helpful tool to verify exactly this: [Check My Torrent IP](https://torguard.net/checkmytorrentipaddress.php). Copy the link URL of the giant download button and add it to your Transmission downloads as a magnet address. It'll immediately throw up an error in transmission, since it's not meant to actually download anything, but within a few seconds you should see results appear in the table, showing what peers and trackers see when they connect to your Transmission daemon. This IP address should exactly match your tunnel exit IP (the one you get from `curl --interface tun0 ipinfo.io/ip`).
 
 ## Caveats
 
