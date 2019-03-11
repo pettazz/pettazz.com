@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Getting Secure
 tagline: "Yes, \"HTTPS Everywhere\" includes your dumb server. That's what everywhere means."
 tags: [blag, https, ssl, alonso, homelab, plex, let's encrypt, certbot]
