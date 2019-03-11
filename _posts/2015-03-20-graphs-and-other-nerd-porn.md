@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Graphs and Other Nerd Porn
-excerpt: "I got bored and decided I wanted to know how hot my server gets. Spoilers: I installed a bunch of shit and I still don't really know."
+tagline: "I got bored and decided I wanted to know how hot my server gets. Spoilers: I installed a bunch of shit and I still don't really know."
 tags: [blag, ubuntu, server, cacti, rrdtool, sensors, plex, linux, graphs, mysql]
 comments: true
 image:
@@ -10,7 +10,7 @@ image:
 ---
 
 
-There's a guy named Alonso who lives in my living room, and lately he's been making a lot more noise than he used to. He's actually an Ubuntu Server who runs my instances of [PLEX](http://plex.tv) and [Sonarr](http://sonarr.tv), so it's a little less weird but still makes me worry. His fans used to run at a pretty constant rate until recently when he started interrupting my favorite shows by preparing for takeoff and setting his fans to Max Power.
+There's a guy named Alonso who lives in my living room, and lately he's been making a lot more noise than he used to.<!--more--> He's actually an Ubuntu Server who runs my instances of [PLEX](http://plex.tv) and [Sonarr](http://sonarr.tv), so it's a little less weird but still makes me worry. His fans used to run at a pretty constant rate until recently when he started interrupting my favorite shows by preparing for takeoff and setting his fans to Max Power.
 
 ![MAX POWER](http://i.imgur.com/Iq1Y0Hl.jpg "But you mustn't touch!")
 

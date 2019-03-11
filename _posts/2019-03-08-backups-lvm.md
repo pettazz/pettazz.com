@@ -2,7 +2,7 @@
 layout: post
 published: false
 title: Backups with LVM
-excerpt: backups are hard and LVM makes it easy
+tagline: backups are hard and LVM makes it easy
 tags: [blag, lvm, alonso, homelab, ubuntu]
 comments: true
 image:

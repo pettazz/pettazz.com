@@ -7,7 +7,7 @@ tags: [code, selenium, projects, bash, testing, automation, QA, IE, Ballmer, VMs
 comments: true
 ---
 
-After dealing with Selenium testing on Internet Explorer for some time now, I've learned one thing in particular: IE is horrifically self-destructive. I don't know exactly what it is, but the more it's used for tests, the more quickly its performance degrades. I would think it has something to do with the fact that Firefox and Chrome each are started with new user profiles each time Selenium runs, a feature that IE doesn't support, but I have no real idea what the cause is or even what in particular makes it become so slow and useless. Though I have a pretty good idea. 
+After dealing with Selenium testing on Internet Explorer for some time now, I've learned one thing in particular: IE is horrifically self-destructive.<!--more--> I don't know exactly what it is, but the more it's used for tests, the more quickly its performance degrades. I would think it has something to do with the fact that Firefox and Chrome each are started with new user profiles each time Selenium runs, a feature that IE doesn't support, but I have no real idea what the cause is or even what in particular makes it become so slow and useless. Though I have a pretty good idea. 
 
 ![Needs more developers](http://i.imgur.com/S6ZP6.jpg)
 

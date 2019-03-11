@@ -2,7 +2,7 @@
 layout: post
 published: false
 title: New Server Stuff
-excerpt: ""
+tagline: ""
 tags: [blag, plex, ubuntu, nfs, homelab, networking, osto]
 comments: true
 image:

@@ -2,14 +2,14 @@
 layout: post
 published: true
 title: "Tunnel Transmissions: Securing Transmission with OpenVPN"
-excerpt: "I remember thinking it would take a man six hundred years to tunnel through the internet to Sweden. Old openVPN did it in less than twenty."
+tagline: "I remember thinking it would take a man six hundred years to tunnel through the internet to Sweden. Old openVPN did it in less than twenty."
 tags: [blag, openvpn, vpn, privacy, alonso, homelab, transmission]
 comments: true
 image:
   feature: tunnel.jpg
 ---
 
-In this week's installment of *Extremely Justified TBH Privacy Paranoia Theater*, we'll take a look at making sure one of the most popular download tools isn't broadcasting to everyone in between your ethernet port and your peers in Estonia what kind of weird torrents you're into. There are a lot of download tools out there, but Transmission is still one of the best thanks to its stability and almost unbelievably easy setup and usage. One downside is that it doesn't natively support VPNs or even binding to specific network interfaces, but luckily we can use a little bit of configuration wizardry to reach that end goal anyway. It's the type of thing that can be used for skirting copyright law and downloading media illegally, so please don't use my knowledge to break the law.
+In this week's installment of *Extremely Justified TBH Privacy Paranoia Theater*, we'll take a look at making sure one of the most popular download tools isn't broadcasting to everyone in between your ethernet port and your peers in Estonia what kind of weird torrents you're into.<!--more--> There are a lot of download tools out there, but Transmission is still one of the best thanks to its stability and almost unbelievably easy setup and usage. One downside is that it doesn't natively support VPNs or even binding to specific network interfaces, but luckily we can use a little bit of configuration wizardry to reach that end goal anyway. It's the type of thing that can be used for skirting copyright law and downloading media illegally, so please don't use my knowledge to break the law.
 
 Or do; honestly, what the fuck do I care?
 

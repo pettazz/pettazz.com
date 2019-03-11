@@ -2,14 +2,14 @@
 layout: post
 published: true
 title: Stealing My Friend's Wedding Photos
-excerpt: "I mean, kind of. Only the low-res versions. So low-res theft. It's like a misdemeanor at best."
+tagline: "I mean, kind of. Only the low-res versions. So low-res theft. It's like a misdemeanor at best."
 tags: [blag, javascript, photographers, scrapers, bash, automation, problem solving]
 comments: true
 image:
   feature: photo-theft.jpg
 ---
 
-The web is a wild, untamable mass of infinitely shareable information. It was designed to be entirely open; anything on it would be downloadable by anyone else with a connection. This is the reason your browser has a "Save image" menu option when you right click a photo and not even the most proprietary-focused, litigious, IP-clutching companies can do anything about it. So when I headed over to the album that my friend's wedding photographer had posted, and saw that right clicking was blocked, I was filled with the spirit of Stallman himself and a self-righteous drive to free these photos from their DRM-ish prison.
+The web is a wild, untamable mass of infinitely shareable information. It was designed to be entirely open; anything on it would be downloadable by anyone else with a connection. This is the reason your browser has a "Save image" menu option when you right click a photo and not even the most proprietary-focused, litigious, IP-clutching companies can do anything about it. So when I headed over to the album that my friend's wedding photographer had posted, and saw that right clicking was blocked, I was filled with the spirit of Stallman himself and a self-righteous drive to free these photos from their DRM-ish prison.<!--more-->
 
 ![Stallman is the one truth](/images/stallman.png "Just don't wear sandals around him.")
 

@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Graphs and Other Nerd Porn, Part 2
-excerpt: "Now that I can see how hot my server is, I want to see what the hell is causing it."
+tagline: "Now that I can see how hot my server is, I want to see what the hell is causing it."
 tags: [blag, ubuntu, server, cacti, rrdtool, sensors, plex, linux, graphs, mysql]
 comments: true
 image:
@@ -13,7 +13,7 @@ image:
 Previously, on Graphs and Other Nerd Porn: [Part 1](/graphs-and-other-nerd-porn)
 {: .notice}
 
-So here I am, with a bunch of graphs showing me that once in a while on my server, the load average goes up and the temperature follows. Big damn deal. What good is any of this if I can't get some kind of insight into what's causing it? I mean, what am I going to do if the temp graph suddenly shows 80, go get an ice pack and put it on top of the power supply? 
+So here I am, with a bunch of graphs showing me that once in a while on my server, the load average goes up and the temperature follows. Big damn deal. <!--more-->What good is any of this if I can't get some kind of insight into what's causing it? I mean, what am I going to do if the temp graph suddenly shows 80, go get an ice pack and put it on top of the power supply? 
 
 ![Extra Cooling](http://i.imgur.com/VruQNty.jpg "Other solutions proved inconvenient.")
 
