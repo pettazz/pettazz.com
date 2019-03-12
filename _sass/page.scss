@@ -289,7 +289,7 @@ $button-size: 1.5rem;
 			font-family: $heading-font;
 		}
 		h1 { 
-			font-size: 48px;
+			font-size: 36px;
 			color: #fff; 
 			text-shadow: black 0px 0px 4px;
 			position: absolute;
@@ -297,6 +297,13 @@ $button-size: 1.5rem;
 			left: 0;
 			margin: 0;
 			padding: 0;
+
+			@media #{$small} {
+				font-size: 48px;
+			}
+			@media #{$x-large} {
+				font-size: 68px;
+			}
 		}
 		h2 {
 			margin-bottom: 4px;
