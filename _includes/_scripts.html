@@ -22,3 +22,22 @@
   {% include _disqus_comments.html %}
 {% endif %}
 <script src="{{ site.url }}/assets/js/vendor/retina.js"></script>
+<script type="text/javascript">
+  
+  var maxImgId = 7;
+  var minImgId = 1;
+
+  $(document).ready(function(){
+    $(".index-header-wrapper").each(function(){
+      var imageSrc = $(this).data("index-header-image");
+
+      if(!imageSrc){
+        var randomid = Math.floor(Math.random() * (maxImgId - minImgId + 1)) + minImgId;
+        imageSrc = "{{ site.url }}/images/sample-image-" + randomid + ".jpg";
+      }
+
+      $(this).css("backgroundImage", "url(" + imageSrc + ")");
+    });
+  });
+
+</script>

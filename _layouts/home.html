@@ -36,14 +36,25 @@
     <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
     {% for post in site.posts limit:6 %}    
     <article>
+      <div class="index-header-wrapper" data-index-header-image=
+        {% if post.image.feature %}
+          {% if post.image.feature contains 'http' %}
+              "{{ post.image.feature }}"
+            {% else %}
+              "{{ site.url }}/images/{{ post.image.feature }}"
+            {% endif %}
+          {% endif %} >
+        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><h1>{{ post.title }}</h1></a>
+      </div>
       {% if post.link %}
         <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
       {% else %}
         <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
-          <h2>{{ post.title }}</h2>
+          {% if post.tagline %}<h2>{{ post.tagline }}</h2>{% endif %}
           <p>{{ post.excerpt | strip_html }}</p>
         </a>
       {% endif %}
+      <p class="post-meta"><small>Posted on {{ post.date | date: "%B %d, %Y" }}{% if post.modified %}, Updated on {{ post.modified | date: "%B %d, %Y" }}{% endif %}</small></p>
     </article>
     {% endfor %}
     <h3 style="float:right"><a href="/posts">More Posts >></a></h3>
