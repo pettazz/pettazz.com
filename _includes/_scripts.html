@@ -38,6 +38,14 @@
 
       $(this).css("backgroundImage", "url(" + imageSrc + ")");
     });
+
+    $(".random-header").each(function(){
+      var randomid = Math.floor(Math.random() * (maxImgId - minImgId + 1)) + minImgId;
+      imageSrc = "{{ site.url }}/images/sample-image-" + randomid + ".jpg";
+
+      $(this).attr("src", imageSrc);
+      console.log(imageSrc);
+    });
   });
 
 </script>
