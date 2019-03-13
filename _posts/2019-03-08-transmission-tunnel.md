@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-modified: 2019-03-11
+modified: 2019-03-12
 title: "Tunnel Transmissions: Securing Transmission with OpenVPN"
 tagline: "I remember thinking it would take a man six hundred years to tunnel through the internet to Sweden. Old openVPN did it in less than twenty."
 tags: [blag, openvpn, vpn, privacy, alonso, homelab, transmission]
@@ -83,7 +83,12 @@ Fairly straightforwardly, `route-up` names a script to be run when the tunnel is
 
 ## Oh That Means We Actually Have to Do It, Huh
 
-Now we need to create the scripts. Since they're going to be run during the OpenVPN startup, that means they'll run as root. Once you create the files, you'll of course need to set the executable bit with `chmod +x` but also make sure the permissions make sense: `chmod 700`, `chown root:root`.
+Now we need to create the scripts. Since they're going to be run during the OpenVPN startup, that means they'll run as root. Once you create the files, you'll of course need to set the executable bit with `chmod +x` but also make sure the permissions make sense: `chmod 700`, `chown root:root`. Let's get that out of the way first:
+
+    sudo touch /etc/openvpn/transmission-up.sh /etc/openvpn/transmission-down.sh
+    sudo chmod 700 /etc/openvpn/transmission-up.sh /etc/openvpn/transmission-down.sh
+    sudo chmod +x /etc/openvpn/transmission-up.sh /etc/openvpn/transmission-down.sh
+    sudo chown root:root /etc/openvpn/transmission-up.sh /etc/openvpn/transmission-down.sh
 
 #### Startup Script
 
@@ -92,8 +97,8 @@ Let's start with the up script, which I called `/etc/openvpn/transmission-up.sh`
 {% highlight bash %}
 #!/bin/bash
 
-export $route_vpn_gateway
-export $ifconfig_local
+export route_vpn_gateway
+export ifconfig_local
 export PORT=51413
 
 /sbin/ip route add default via $route_vpn_gateway dev tun0 table 200
@@ -186,10 +191,10 @@ Once OpenVPN is calling the `down` script, the routes have already been removed,
 
 ## Wake Up, Transmission 
 
-We only have one thing left, and that's getting Transmission bound to the tunnel's IP address instead of the default network interface. Luckily, it has a command line option to do just that. Unluckily, though, we're not running this one in the context of the OpenVPN script and its helpful environment variables, so we have to figure that out on our own. `ifconfig tun0` will give us exactly what we're looking for, but since this needs to be jammed into a command line parameter, it requires a little bit of bash acrobatics to narrow that down to just the IP address itself:
+We only have one thing left, and that's getting Transmission bound to the tunnel's IP address instead of the default network interface. Luckily, it has a command line option to do just that. Unluckily, though, we're not running this one in the context of the OpenVPN script and its helpful environment variables, so we have to figure that out on our own. `ip addr show tun0` will give us exactly what we're looking for, but since this needs to be jammed into a command line parameter, it requires a little bit of bash text acrobatics to narrow that down to just the IP address itself:
 
 {% highlight bash %}
-ifconfig tun0 | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'
+ip addr show tun0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1
 {% endhighlight %}
 
 All I can say is, thank [Doug McIlroy](https://web.archive.org/web/20110430221313/https://www.cs.dartmouth.edu/~sinclair/doug/) for pipes, the literal glue that holds all our crap together.
@@ -210,7 +215,7 @@ After=network.target
 [Service]
 User=debian-transmission
 Type=notify
-ExecStart=/bin/bash -c "exec /usr/bin/transmission-daemon --no-portmap -f"
+ExecStart=/usr/bin/transmission-daemon --no-portmap -f
 ExecReload=/bin/kill -s HUP $MAINPID
 
 [Install]
@@ -219,12 +224,12 @@ WantedBy=multi-user.target
 
 Yours may look a lot different, but there's only one key line here that we need to edit, the `ExecStart` property. Transmission offers the command line option `--bind-address-ipv4` to specify the network address to bind to rather than just going with the default. We can stick our one-liner in here to provide it with the tunnel's address:
 
-    --bind-address-ipv4 $(ifconfig tun0 | grep 'inet addr' | cut -d: -f2 | awk '{print $1}')
+    --bind-address-ipv4 $(ip addr show tun0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
 
 I also add the `--log-error` flag to enable logging which is off by default for some unknown reason, in case something needs to be debugged (like, shoving all its traffic forcibly down some strange tunnel, for example). With the new options added, that means my `ExecStart` looks like this:
 
 {% highlight ini %}
-ExecStart=/bin/bash -c "exec /usr/bin/transmission-daemon --no-portmap -f --bind-address-ipv4 $(ifconfig tun0 | grep 'inet addr' | cut -d: -f2 | awk '{print $1}') --log-error"
+ExecStart=/bin/bash -c "exec /usr/bin/transmission-daemon --no-portmap -f --bind-address-ipv4 $(ip addr show tun0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1) --log-error"
 {% endhighlight %}
 
 ## Congrats on Your Cool New Tunnel
