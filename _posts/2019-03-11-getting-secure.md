@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+modified: 2019-05-03
 title: Getting Secure
 tagline: "Yes, \"HTTPS Everywhere\" includes your dumb server. That's what everywhere means."
 tags: [blag, https, ssl, alonso, homelab, plex, let's encrypt, certbot]
@@ -69,7 +70,7 @@ First things first, we'll need to create this new admin user and store the crede
 
     sudo htpasswd -c /etc/apache2/.htpasswd mycooladmin
 
-It will ask you twice to enter the new password for "mycooladmin", and then write the encrypted credentials to the file. Using `sudo` means it will be private to the root user, which is good for security, but we'll also need to make sure Apache can read it, so we'll also need to `chmod 640` it.
+It will ask you twice to enter the new password for "mycooladmin", and then write the encrypted credentials to the file. Using `sudo` means it will be private to the root user, which is good for security, but we'll also need to make sure Apache can read it, so we'll also need to `chmod 644` it.
 
 You may also need to activate the `auth_basic_module` module if it wasn't already. You can do that simply:
 
@@ -157,7 +158,16 @@ Now we'll update our virtual host to support SSL. Certbot may have made some or 
 Certbot may wrap your whole configuration in an `<IfModule mod_ssl.c>` block just to avoid startup issues on servers where it's not fully supported, but since the goal here is SSL or bust, I think it's fine to make Apache fail to even start up if SSL is not properly supported.
 {: .notice}
 
-The main things to note here are that our VirtualHost is now listening on `*:443` for HTTPS, rather than HTTP's port 80, and we've added a few top level directives that enable SSL, and point it to our certificates. At the end, we also now always set [the HSTS header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security), which strictly enforces to clients that this domain is always to be accessed via HTTPS only. If you're also hosting insecure stuff on this domain (what part of HTTPS *EVERYWHERE* are you not getting?) then you'll need to remove this or they'll be blocked.
+The main things to note here are that our VirtualHost is now listening on `*:443` for HTTPS, rather than HTTP's port 80, and we've added a few top level directives that enable SSL, and point it to our certificates. 
+
+At the end, we also now always set [the Strict-Transport-Security header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security), which strictly enforces to clients that this domain is always to be accessed via HTTPS only. If you're also hosting insecure stuff on this domain (what part of HTTPS *EVERYWHERE* are you not getting?) then you'll need to remove this or they'll be blocked. If you keep it, you may also need to enable Apache's headers module which is sometimes not enabled by default. You can check to see if it is with: 
+    
+    sudo apache2ctl -M | grep headers
+
+If `"headers_module"` isn't listed, you'll need to enable it:
+
+    sudo a2enmod headers
+    sudo apache2ctl restart
 
 Your configuration may vary on this part depending on Certbot's infinite wisdom, so don't worry about conforming identically to someone else's example SSL settings. 
 
@@ -168,6 +178,7 @@ Finally, we're ready to create the proxy. We need a few more Apache modules enab
     sudo a2enmod proxy
     sudo a2enmod proxy_http
     sudo a2enmod rewrite
+    sudo apache2ctl restart
 
 We turn on the SSL proxy engine (and RewriteEngine which may be used later) and the in our config by adding:
 
