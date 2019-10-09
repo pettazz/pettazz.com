@@ -54,7 +54,7 @@
           <p>{{ post.excerpt | strip_html }}</p>
         </a>
       {% endif %}
-      <p class="post-meta"><small>Posted on {{ post.date | date: "%B %d, %Y" }}{% if post.modified %}, Updated on {{ post.modified | date: "%B %d, %Y" }}{% endif %}</small></p>
+      <p class="post-meta">Posted on {{ post.date | date: "%B %d, %Y" }}{% if post.modified %}, Updated on {{ post.modified | date: "%B %d, %Y" }}{% endif %}</p>
     </article>
     {% endfor %}
     <h3 style="float:right"><a href="/posts">More Posts >></a></h3>
