@@ -49,6 +49,8 @@ owner:
   soundcloud: #username
   weibo: #username
   flickr: #username
+  reddit: pettazz
+  untappd: pettazz
 
 include: [".htaccess"]
 exclude: ["lib", ".bundle", ".vendor", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
