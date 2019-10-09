@@ -52,7 +52,7 @@ svg:not(:root) {
   padding: 8px 20px;
   @include font-rem(14);
   font-family: $heading-font;
-  font-weight: 700;
+  font-weight: 400;
   background-color: $primary;
   color: $white;
   border-width: 2px !important;
