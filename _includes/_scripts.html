@@ -4,6 +4,22 @@
 <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
 
+<!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+<script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//osto.us/fathom/tracker.js', 'fathom');
+fathom('set', 'siteId', 'PFOFQ');
+fathom('trackPageview');
+</script>
+<!-- / Fathom -->
+
 {% if page.comments %}
   {% include _disqus_comments.html %}
 {% endif %}
