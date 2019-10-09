@@ -2,6 +2,7 @@
 // --------------------------------------------------
 h1, h2, h3, h4, h5, h6 {
 	font-family: $heading-font;
+	font-weight: 400;
 	small{
 		color: lighten($text-color, 40);
 	}
@@ -133,6 +134,7 @@ blockquote {
 // --------------------------------------------------
 p {
 	margin: 0 0 $indent-var;
+	line-height: 140%;
 	// sibling indentation
   @if $paragraph-indent == true {
     & + p {
