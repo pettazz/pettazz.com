@@ -19,10 +19,97 @@ sitemap: false
 @import "site";
 @import "typography";
 @import "pygments";
-@import "coderay";
 @import "elements";
 @import "forms";
 @import "page";
 // @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
 //@import "vendor/google/fonts";
+
+
+// dark theme / light theme
+// yep it's ayu
+
+body{ //light default
+  background-color: #fafafa; //background
+  color: #333;
+  
+  #main{
+    h1,h2,h3,h4,h5,h6{
+      color: #333; 
+
+      small{
+        color: #fa8d3e;
+      }
+    }
+
+    a{
+      color: #55b4d4;
+    }
+
+    #index{
+      h1{
+        color: #fff;
+      }
+
+      a{
+        color: #333;
+      }
+
+      h2{
+        color: #fa8d3e; //keyword
+      }
+
+      .post-meta{
+        color: #f2ae49; //function name
+      }
+    }
+  }
+
+  .navigation-wrapper{
+    a{
+      color: #55b4d4; //language variable
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  body{
+    background-color: #0a0e14; //background
+    color: #e4e4e4;
+    
+    #main{
+      h1,h2,h3,h4,h5,h6{
+        color: #e4e4e4; 
+
+        small{
+          color: #ff8f40;
+        }
+      }
+
+      a{
+        color: #39bae6;
+      }
+
+      #index{
+        a{
+          color: #e4e4e4;
+        }
+
+        h2{
+          color: #ff8f40; //keyword
+        }
+
+        .post-meta{
+          color: #ffb454; //function name
+        }
+      }
+    }
+
+    .navigation-wrapper{
+      a{
+        color: #39bae6; //language variable
+      }
+    }
+  }
+}
