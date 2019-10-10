@@ -17,7 +17,39 @@ Just kidding, I wanted to share some of them and I was too lazy to pick out indi
 
 After a little bit of prodding around the elements panel and tossing click events around, I had a pretty good idea of how the thing worked. The filenames were non-sequential, so I had to rely on the UI to get them. The full sized (not original, but better than thubnail) images were only loaded once the thumbnail was clicked, so I had to simulate that event. The site uses an alternating layer of two main image display ````div`````s to show the currently selected image, but only moves the new one to the front once its image has finished loading. So the easiest way to iterate through the album would be to actually simulate the click (which in actuality turned out to be mousedown) event on each thumbnail, wait a few seconds, and then grab the url of the image in the forefront of the main stage, until there were no more thumbnails to click.
 
-<script src="https://gist.github.com/pettazz/5975b296fe3bbe187e856f73d7eeda67.js"></script>
+{% highlight javascript %}
+var urls = [];
+var thumbs = $('.tab-frame-content .pg img.pv-img');
+var doit = function(idx){
+    if(idx < thumbs.length){
+        var el = $(thumbs[idx]);
+        var link = el.parent('a');
+        link.trigger('mousedown');
+        var timeoutID = window.setTimeout(function(){
+            $('.pf-plane > .pv-ready .pv-inner > img.pv-img').each(function(){
+                var style = $(this).attr('style');
+                if(style){
+                    urls.push(style.match(/(?:"[^"]*"|^[^"]*$)/)[0].replace(/"/g, ""));
+                }
+            });
+            doit(idx + 1)
+        }, 2000);
+    }else{
+        if($("a#_aab-n").css("visibility") !== "hidden"){
+            $("a#_aab-n").trigger('mousedown');
+            var timeoutID = window.setTimeout(function(){
+                thumbs = $('.tab-frame-content .pg img.pv-img');
+                doit(0);
+            }, 4000);
+        }else{
+            console.log(urls);
+        }
+    }
+};
+
+doit(0);
+{% endhighlight %} 
+
 
 All I needed to do was dump this into the console, take the dogs for a walk, and I'd have a list of all the photos to download. The next step was figuring out what to do with this list, since browsers (thank god) aren't allowed to just interact with the local filesystem. 
 

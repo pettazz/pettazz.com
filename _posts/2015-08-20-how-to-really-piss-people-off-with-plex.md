@@ -46,7 +46,42 @@ What Squid lets us do is specify a script to inspect and potentially rewrite any
 
 Here's a python script I threw together to do that along with some basic logging.
 
-<script src="https://gist.github.com/pettazz/d7c8540bd7056bf9bffac0effd7e4558.js"></script>
+{% highlight python %}
+#!/usr/bin/env python
+import sys
+
+BAD_PEOPLE = [
+    '192.168.1.118',
+    '192.168.1.119'
+]
+
+while True:
+    # squid writes stuff to us via stdin like this:
+    # http://pettazz.com/transcode/sessions/123456789 91.44.124.101/- - GET myip=192.168.1.117 myport=32400
+    line = sys.stdin.readline().strip()
+    new_url = '\n'
+    list = line.split(' ')
+    if len(list) > 1:
+        with open('/etc/squid3/spaghetti.log', 'a') as logfile:
+            logfile.write('LINE: ------------------------\n')
+            logfile.write(line + '\n\n')
+            old_url = list[0]
+            ip = list[1].split("/")[0]
+            if ip in BAD_PEOPLE:
+                logfile.write('IP MATCH\n')
+                if "/video" in old_url and "metadata%2F" in old_url:
+                    old_parts = old_url .split("metadata%2F", 1)
+                    new_url = old_parts[0] + "metadata%2F42554&" + old_parts[1].split('&', 1)[1] + new_url;
+                    logfile.write('REWRITE:--------------------------------\n')
+                    logfile.write(old_url + '\n')
+                    logfile.write(new_url)
+                    logfile.write('----------------------------------------\n\n')
+            else:
+                logfile.write('IP MISS:' + ip + '\n')
+
+    sys.stdout.write(new_url)
+    sys.stdout.flush()
+{% endhighlight %} 
 
 I'm _almost_ surprised there isn't already a module to do this. The list at the top defines which IPs will get spaghetti all over them, and the path ````/etc/squid3/spaghetti.log```` can be defined as wherever you want my garbage logging spewed into. 
 
