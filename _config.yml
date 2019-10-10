@@ -31,7 +31,7 @@ owner:
   avatar: bio-photo.png
   bio: "I liek chocolate milk."
   email: website@nick.pettazzoni.com
-  disqus-shortname: pettazz
+  # disqus-shortname: pettazz
   twitter: pettazz
   facebook: #username
   bing-verify: 
