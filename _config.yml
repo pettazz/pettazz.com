@@ -2,8 +2,8 @@
 
 title:            pettazz'n
 locale:           en_US
-url:              https://pettazz.com
-host:             pettazz.com
+url:              http://localhost:4000
+host:             localhost
 
 # Jekyll configuration
 
