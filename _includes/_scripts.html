@@ -4,6 +4,7 @@
 <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
 
+{% if site.host != "localhost" %}
 <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
 <script>
 (function(f, a, t, h, o, m){
@@ -19,6 +20,10 @@ fathom('set', 'siteId', 'PFOFQ');
 fathom('trackPageview');
 </script>
 <!-- / Fathom -->
+{% endif %}
+{% if site.host == "localhost" %}
+<!-- skipped fathom analytics because this is localhost -->
+{% endif %}
 
 {% if page.comments %}
   {% include _disqus_comments.html %}
