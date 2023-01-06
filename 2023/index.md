@@ -13,6 +13,8 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>January</small></h1>
   
+  <p>It's another written bit that you'll just have to believe me on for the time being. I promise I'll get this stuff sorted soon. Probably.</p>
+
   <p>Why, this very page you see before you! Still needs a fair amount of help, specifically templatizing it so I don't have to do so much manual editing each day and can use markdown in these little blurbs. I'd also like to add a little graphic for "type of thing" to indicate whether it was writing or a doodle or some coding nonsense, but it's off to a good start if you ask me. Original cool timeline thing taken from <a href="https://codepen.io/letsbleachthis/pen/YJgNpv" target="_blank">this CodePen</a>; I feel like I learn ten new things about CSS every time I do anything with it these days.</p>
 
   <p>500 words in the creative style that I don't have a place to post just yet, so you'll just have to take my word for it until I get that figured out, so <code>//TODO</code></p>
