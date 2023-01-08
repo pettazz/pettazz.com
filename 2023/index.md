@@ -13,7 +13,9 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>January</small></h1>
   
-  <p>As promised, started working on the *other* place to put creative type stuff because it just doesn't fit the vibe here on nerd blag. Fart Depot dot biz will be made up of two sections, "I wrote it" and "I drew it" and of course be another highly automated Jekyll site. Today's *thing* in particular was mucking around with a design for it which is pretty simple but incredibly silly (if I can actually write the code to make it work).</p>
+  <p>Now this may come as a shock but I intended to start putting together the new website but got absolutely bogged down in the design details. I'm talking picking out colors and making some "branding" for this hypothetical website, not even what kind of layout it's gonna have. But I'm pretty happy with how it came out, basically hand drawing a nice font I didn't pay for and doodling some lines to build a website out of. You'll love it too when you see it, eventually, I'm sure.</p>
+
+  <p>As promised, started working on the <em>other</em> place to put creative type stuff because it just doesn't fit the vibe here on nerd blag. Fart Depot dot biz will be made up of two sections, "I wrote it" and "I drew it" and of course be another highly automated Jekyll site. Today's <em>thing</em> in particular was mucking around with a design for it which is pretty simple but incredibly silly (if I can actually write the code to make it work).</p>
 
   <p>It's another written bit that you'll just have to believe me on for the time being. I promise I'll get this stuff sorted soon. Probably.</p>
 
