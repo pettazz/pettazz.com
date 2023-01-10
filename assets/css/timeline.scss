@@ -11,7 +11,7 @@ div.timeline {
   min-width: 300px;
   max-width: 1400px;
   margin: auto;
-  counter-reset: section 10;
+  counter-reset: dayofmonth 10;
 
   p {
     line-height: 1.75em;
@@ -21,12 +21,12 @@ div.timeline {
     border-width: 5px;
     margin: 0;
     padding: 40px;
-    counter-increment: section -1;
+    counter-increment: month -1;
     position: relative;
     
     //numbers
     &:before {
-      content: counter(section);
+      content: counter(month);
       position: absolute;
       padding: 10px;
       height: 1.25em;
