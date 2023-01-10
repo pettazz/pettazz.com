@@ -13,6 +13,8 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>January</small></h1>
   
+  <p>The Occluded Website continues to come together. You'll love it when you finally get to see it. Or maybe you won't but I don't care because I like it quite a bit.</p>
+
   <p>It's been a tough few days realizing that I don't know how to design websites that are fun and not what you might generously call "businesslike" these days. The last time I did it was for WNV in 2019, and before that who knows. Anyway expect some incredible silliness and probably a fair amount of feeling like you're back in the heights of 2013 style.</p>
 
   <p>Now this may come as a shock but I intended to start putting together the new website but got absolutely bogged down in the design details. I'm talking picking out colors and making some "branding" for this hypothetical website, not even what kind of layout it's gonna have. But I'm pretty happy with how it came out, basically hand drawing a nice font I didn't pay for and doodling some lines to build a website out of. You'll love it too when you see it, eventually, I'm sure.</p>
