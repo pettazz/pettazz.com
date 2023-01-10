@@ -21,7 +21,7 @@ div.timeline {
     border-width: 5px;
     margin: 0;
     padding: 40px;
-    counter-increment: month -1;
+    counter-increment: dayofmonth -1;
     position: relative;
     
     //numbers
