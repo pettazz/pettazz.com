@@ -13,6 +13,8 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>January</small></h1>
   
+  <p>What do you know, we have the total package here for a automatic build and deploy. It's honestly amazing how much incredible functionality you can get for free from places like GitHub (until you need a lot of resources, I suppose). It probably costs Microsoft the equivalent of the six dollars in quarters I dropped behind the washing machine one time, but it's still nice. Now I just have to make it look like something and start dumping all my content into it.</p>
+
   <p>I've got a nice little build and deploy machine working here, using <a href="https://fly.io" target="_blank">Fly.io</a> to run remote builds and deploy on their network, which they make really easy with their <code>flyctl</code> tool and a multi-stage Docker build. Next steps are to make a semi-CI/CD setup with GitHub actions and then make it a generic "base repo" that can be forked to create your own site making use of this stuff with a minimal amount of setup (fart depot dot biz will be one such site).</p>
 
   <p>The Occluded Website continues to come together. You'll love it when you finally get to see it. Or maybe you won't but I don't care because I like it quite a bit.</p>
