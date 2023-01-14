@@ -13,7 +13,7 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>January</small></h1>
   
-
+  <p>Say hello to <a href="https://github.com/pettazz/flying-jekyll" target="_blank">Flying Jekyll</a>, a skeleton for getting a Jekyll site automatically building and deploying on every commit via <a href="https://fly.io" target="_blank">Fly.io</a>. This is what the new website will be using, and this is a handy base for anyone to use, including myself because I clearly cannot stop making Jekyll sites.</p>
 
   <p>The amount of time I have spent just drawing random garbage only to land on "hand drawing the domain name in a nice font" as the "logo" such as it is, is truly disgusting. But hey at least I have something I like now, so that's progress. Why does this stupid website that's just a dumping ground for content need a "logo" anyway? Because I simply cannot help myself and get a perverse joy out of obsessing over truly meaningless details. Obviously.</p>
 
