@@ -13,6 +13,8 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>January</small></h1>
 
+  <p>Very possible that I spent too long on making a menu and remembering anything about CSS, but hey now they got a <code>image-set</code> CSS function (still neeeds a <code>-webkit-</code> prefix but hey pobody's nerfect) that makes @2x images a lot easier, so that's neat.</p>
+
   <p>Standing up an actual website now, finally, at <a href="https://fartdepot.biz" target="_blank">fartdepot.biz</a>! I remember absolutely nothing about how to use Bootstrap so maybe reusing it as the CSS framework isn't the best move. Oh well, too late, there's already a coming soon page!</p>
   
   <p>Say hello to <a href="https://github.com/pettazz/flying-jekyll" target="_blank">Flying Jekyll</a>, a skeleton for getting a Jekyll site automatically building and deploying on every commit via <a href="https://fly.io" target="_blank">Fly.io</a>. This is what the new website will be using, and this is a handy base for anyone to use, including myself because I clearly cannot stop making Jekyll sites.</p>
