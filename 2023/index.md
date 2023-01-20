@@ -13,7 +13,13 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>January</small></h1>
 
-  <p>Took a break from websiting to do some actual creative content, what a nice change of pace that was. You still ca 't see it though, not until I *finish the damn website*.</p>
+  <p>Blobs. We're all about blobs now. The menu will be a big stinky ink blob that gets splashed onto the page when you click the mini-logo on content pages. I want all the *stuff* to be at an absolute minimum and for the actual content to be the focus, so we'll just have a smaller version of the hand drawn font logo floating in the corner, which will blob the menu blob so you can go to a different page or whatever, but that's all. And the footer. I should clean that up the busted WNV copypasta looks like dogshit.</p>
+
+  <p>Sometimes you spend a bunch of time making an animated menu that slides up and down out of view like the hidden taskbar in Windows 95 and then you look at it for about 30 seconds and realize you hate it. We've all been there, man. It'll be just fine.</p>
+
+  <p>We now have, if I do say so myself, a very nice page template for written content. I don't love the header/menu so the next step will be some kind of hidden menu that reveals itself when you click the logo or whatever. A very new concept for me that I don't remember ever seeing before.</p>
+
+  <p>Took a break from websiting to do some actual creative content, what a nice change of pace that was. You still can't see it though, not until I *finish the damn website*.</p>
 
   <p>Very possible that I spent too long on making a menu and remembering anything about CSS, but hey now they got a <code>image-set</code> CSS function (still neeeds a <code>-webkit-</code> prefix but hey pobody's nerfect) that makes @2x images a lot easier, so that's neat.</p>
 
