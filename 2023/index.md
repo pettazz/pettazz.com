@@ -13,6 +13,14 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>January</small></h1>
 
+  <p>I've added the "similar posts" stuff which I like but I'm not sure it fits with the theme very well. I'll just leave it as is until I start messing with these types of post preview box things on the home page; that's where I'll really have to decide on their style.</p>
+
+  <p>Now that's what I call a hidden menu. There's a small version of the logo (a "logomark") fixed floating in the corner all the time and no other real website chrome to speak of, it's all <strong><em>content</em></strong>.</p>
+
+  <p>I always had a suspicion but I can now confirm that I do enjoy writing these little stories. Whether that could ever translate into anything bigger there's no way to know, but coming up with a tiny narrative is fun and wrapping it all up at the end is incredibly satisfying.</p>
+
+  <p>Blobs are hard, it turns out. Also pretty ugly! Forget blobs, although I had a fun time splashing them around the page like I was accomplishing something.</p>
+
   <p>Blobs. We're all about blobs now. The menu will be a big stinky ink blob that gets splashed onto the page when you click the mini-logo on content pages. I want all the *stuff* to be at an absolute minimum and for the actual content to be the focus, so we'll just have a smaller version of the hand drawn font logo floating in the corner, which will blob the menu blob so you can go to a different page or whatever, but that's all. And the footer. I should clean that up the busted WNV copypasta looks like dogshit.</p>
 
   <p>Sometimes you spend a bunch of time making an animated menu that slides up and down out of view like the hidden taskbar in Windows 95 and then you look at it for about 30 seconds and realize you hate it. We've all been there, man. It'll be just fine.</p>
