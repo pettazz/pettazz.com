@@ -11,7 +11,14 @@ div.timeline {
   min-width: 300px;
   max-width: 1400px;
   margin: auto;
-  counter-reset: dayofmonth 30;
+  counter-reset: dayofmonth 2;
+
+  &.full-31{
+    counter-reset: dayofmonth 32;    
+  }
+  &.full-30{
+    counter-reset: dayofmonth 31;    
+  }
 
   p {
     line-height: 1.75em;

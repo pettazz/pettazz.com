@@ -11,7 +11,19 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
 <div class="timeline">
 
+  <h1><small>February</small></h1>
+
+  <p>Welcome to month two of Doing Stuff, today I have added the post indices, the basic listing of all posts in each category. It's fine for what it is, but I think it's gonna need a little more attention before I can use the same template to fill the home page with recent posts.</p>
+
+</div>
+
+<div class="timeline full-31">
+
   <h1><small>January</small></h1>
+
+  <p>Last day in January seems like a good time to do something more creative so I drew a bunch of awful, ugly faces and immediately deleted it. To be fair, the intention here wasn't to invent The Perfect Face Design or anything but just to practice doing anything at all and to get weird to see if anything came out in a way I liked. It didn't.</p>
+
+  <p>Share links! I only added them because <code>navigator.share()</code> makes it incredibly easy and I already have the "copy to clipboard" hack has a fallback from WNV. Otherwise I would simply not care, I say lying to myself knowing full well I still would have spent as much time making sure the Open Graph tags were carefully correct for every page because I'm a horrendous perfectionist.</p>
 
   <p>And there you have it, a post page for both categories: drawn and written. I actually cannot think of anything left bugging me to be fixed here, which is probably a first for me. They do break quite badly on narrow mobile screens but I think that's best saved for after the whole site is done, because who knows what else I'm gonna change in the meantime.</p>
 
