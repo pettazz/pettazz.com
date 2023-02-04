@@ -13,6 +13,10 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>February</small></h1>
 
+  <p>Basic page template for the about and license pages, also the silly text to fill them in. Incredibly lazy today. No more brain for me, thanks.</p>
+
+  <p>This is certainly a home page, you cannot argue that. I do not like it. But at the same time I don't know how to make it something I do like. It feels half-assed and put together out of other page pieces as an afterthought, probably because it is. I think I'm gonna be pondering this one for a while.</p>
+
   <p>Welcome to month two of Doing Stuff, today I have added the post indices, the basic listing of all posts in each category. It's fine for what it is, but I think it's gonna need a little more attention before I can use the same template to fill the home page with recent posts.</p>
 
 </div>
@@ -23,7 +27,7 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <p>Last day in January seems like a good time to do something more creative so I drew a bunch of awful, ugly faces and immediately deleted it. To be fair, the intention here wasn't to invent The Perfect Face Design or anything but just to practice doing anything at all and to get weird to see if anything came out in a way I liked. It didn't.</p>
 
-  <p>Share links! I only added them because <code>navigator.share()</code> makes it incredibly easy and I already have the "copy to clipboard" hack has a fallback from WNV. Otherwise I would simply not care, I say lying to myself knowing full well I still would have spent as much time making sure the Open Graph tags were carefully correct for every page because I'm a horrendous perfectionist.</p>
+  <p>Share links, I hate them! I only added them because <code>navigator.share()</code> makes it incredibly easy and I already have the "copy to clipboard" hack has a fallback from WNV. Otherwise I would simply not care, I say lying to myself knowing full well I still would have spent as much time making sure the Open Graph tags were carefully correct for every page because I'm a horrendous perfectionist.</p>
 
   <p>And there you have it, a post page for both categories: drawn and written. I actually cannot think of anything left bugging me to be fixed here, which is probably a first for me. They do break quite badly on narrow mobile screens but I think that's best saved for after the whole site is done, because who knows what else I'm gonna change in the meantime.</p>
 
