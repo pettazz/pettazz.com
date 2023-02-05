@@ -13,6 +13,10 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>February</small></h1>
 
+  <p>Slightly better homepage, still doesn't really do it for me but I can't figure out why so I suppose it'll be fine for now.</p>
+
+  <p>I have this completely abstract idea in my head for a wild doodle behind the logo on the home page, so I've started working on that and also started realizing that it's going to take a while to become what I want it to! But it's really just mindless intricate doodlin' so it's a nice way to spend some time, actually.</p>
+
   <p>Basic page template for the about and license pages, also the silly text to fill them in. Incredibly lazy today. No more brain for me, thanks.</p>
 
   <p>This is certainly a home page, you cannot argue that. I do not like it. But at the same time I don't know how to make it something I do like. It feels half-assed and put together out of other page pieces as an afterthought, probably because it is. I think I'm gonna be pondering this one for a while.</p>
