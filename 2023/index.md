@@ -13,6 +13,14 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>February</small></h1>
 
+  <p>Okay so I realized after I already had it that I could hook this thing up to my <a href="https://docs.flipperzero.one/gpio-and-modules" target="_blank">Flipper Zero's GPIO pins</a> and have a mobile gas testing experience. Seeing that the built in app for GPIO seems to only be about outputting to addresses, and this <a href="https://github.com/NaejEL/flipperzero-i2ctools" target="_blank">I2C tools app</a> is pretty basic, I figure this is likely a "build my own specific app" situation. It's about the same time that I realize I don't actually know how I2C works practically and haven't written C in nearly 15 years. Uh oh!</p>
+
+  <p>Detour Detour: I decided to get a CO<sub>2</sub> sensor. Why? Well, you see I read <a href="https://www.theatlantic.com/health/archive/2023/02/carbon-dioxide-monitor-indoor-air-pollution-gas-stoves/672923/" target="_blank">an article about a lady who got one and it ruined her life</a>. So I instantly, without a moment's hesitation, decided, "Cool! Me next!" Of course, being the way that I am, I won't spend $80 to buy one that already works, but I will end up spending probably three times as much and infinitely more of my limited time on this earth to hack one together instead! I decided to go with the <a href="https://www.adafruit.com/product/4867" target="_blank">the Adafruit SCD-30 here</a> and hook it up to my Raspberry Pi, using their demo scripts to get it working. Lucky for me it turns out I don't have cognitively impairing levels of CO<sub>2</sub> in my house, so I guess I have to find another excuse for... all this.</p>
+
+  <p>Detour: I have an idea for another simple one-off website that shows you one important thing, but this time it's actually useful. I won't write out the full idea here in case Intellectual Property Thieves are looking for easy targets (this will obviously make me fantastically wealthy, somehow), but I will still talk about the details of each step as I go like anything else. I don't intend to actually do it until I finish with Fart Depot dot Biz, but I did some poking around today to see if it's even possible and pick out a name and domain and all that stuff.</p>
+
+  <p>I drew a few more menu elements today with the intention of replacing some or maybe all of the Font Awesome icons with my hand drawn ones, and boy! Did that look like shit! Wow! Nevermind! Yikes!</p>
+
   <p>Slightly better homepage, still doesn't really do it for me but I can't figure out why so I suppose it'll be fine for now.</p>
 
   <p>I have this completely abstract idea in my head for a wild doodle behind the logo on the home page, so I've started working on that and also started realizing that it's going to take a while to become what I want it to! But it's really just mindless intricate doodlin' so it's a nice way to spend some time, actually.</p>
