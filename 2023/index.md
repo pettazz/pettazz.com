@@ -13,6 +13,20 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>February</small></h1>
 
+  <p>Sort of a cop-out again but I copied a bunch of old stuff (including the as yet unposted things mentioned below) into posts on Fart Depot dot Biz. Now it has real content instead of weird test posts! And from today on I'll post there whenever I make new stuff.</p>
+
+  <p>Small tweaks for not looking like dog shit on mobile (small) screens. I really need to learn to do this as I go because tacking it on after is way more annoying.</p>
+
+  <p>I done the dang footer, finally, okay? Isn't it incredible?</p>
+
+  <p>From all the way back on Jan 27, I finally actually redid the hidden menu to use the accessible pattern from that blog post. It looks the same but it works better so that's cool.</p>
+
+  <p>Now that I have a domain for it, I'll say that the new site is going to be called Slike. Yeah it's weird but it'll make sense eventually, I swear. The most important thing this backend needs to be able to do is quantify the "niceness" of weather at any particular time on a few different axes like temperature, precipitation chance/amount, wind, etc. The plan is basically count each measurement's difference from "good" (70°F, no rain, etc) then multiply by two coefficients for each: one to "normalize" it to the same scale as the others (a difference of 10 units of precipitation [inches] and 10 units of temperature [degrees] are pretty massively different) and one for weighting its importance, which combined will give us a kind of score for that set of readings. To start off I'm using a spreadsheet to see if any of these numbers actually make sense before I write any kind of code about it.</p>
+
+  <p>After doing a little more reading on I2C and the Flipper tools I'll put that one on hold for a bit, not because it seems overly complicated (the Flipper tools are really great actually) but because I already have too many things going on and I should probably finish one of them once in a while. For now it can just be a part of the delphi display.</p>
+
+  <p>I suppose now that the site actually works aside from a few purely aesthetic issues I could start actually posting stuff like what I wrote today, but it turns out I am physically incapable of using it before it is 100% done and perfect because of how good and regular my brain is!</p>
+
   <p>While I <em>ruminate</em> on what the new site should look like, I've been poking around different frameworks for actually making it. It's going to be a fairly straightforward single page app that makes requests to a backend caching proxy so I don't overdo my limited requests to the actual API, something <a href="https://pettazz.com/stonks/">I've already done</a> a few times before. But once again, I want to do something new and interesting here, so I've decided to double down on my Fly usage with <a href="https://fresh.deno.dev" target="_blank">Deno's Fresh</a> on top. It looks totally different from anything I've worked with before, and that's kind of the selling point for me here! Of course reading the docs and digging through some of the examples will probably be most of what I do here for the time being.</p>
 
   <p>CO<sub>2</sub> sensor update: I put together a dumb little python script to read it and print directly to stdout every few seconds. Of course, it's using Adafruit's own CircuitPython library which abstracts almost all of the actual I2C communication away, so I didn't exactly learn much here except that the sensor does in fact work and that I have a new mysterious issue with my Raspi constantly disconnecting itself from Wi-Fi. It's great and all that there are so, so many tutorials and libraries and people messing around with this kind of electronics stuff these days, it can become a real nightmare to search for stuff; just looking for a basic explanation/tutorial of the I2C protocol gives you pages and pages of fun Raspberry Pi projects using the same libraries and not much in the way of learning how it actually works. So I'll be doing a lot more research here it looks like.</p>
