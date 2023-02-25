@@ -13,6 +13,16 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>February</small></h1>
 
+  <p>I got the idea in my head to use section colors for the <code>&lt;meta name="theme-color"&lt;</code> on <a href="https://warrantynowvoid.com">WNV></a> posts which I thought would be a very simple update. Obviously, I was wrong and in the time since we've stopped posting, the build has gone to hell. I guess maybe using an EOL version of Ruby does have at least one drawback after all! Who knew? Anyway, seems like I'm stuck here, I would have to upgrade all the Ruby stuff and I think use a custom AWS build image with newer versions and that all sounds exhausting. So it looks like this will be a bigger project and these static html files will stay exactly as they were on July 21, 2022 until then. Fuck! Oops! It's fine the colors didn't actually look that great anyway.</p>
+
+  <p>To look halfway decent it's gotta be huge though so even though I've made a pretty good chunk of silliness, it's probably only like a tenth of what I need. Wild! Maybe once it's big enough to fill the space I'll just start using it and make it progressively larger as I add more.</p>
+
+  <p>Like, a lot.</p>
+
+  <p>I mean, I've had a lot of meetings.</p>
+
+  <p>It's been a busy couple days at my <code>normie day job</code> so I have spent a lot of time in meetings idly doodlin' on the big nonsense thing for the FD header.</p>
+
   <p>Sort of a cop-out again but I copied a bunch of old stuff (including the as yet unposted things mentioned below) into posts on Fart Depot dot Biz. Now it has real content instead of weird test posts! And from today on I'll post there whenever I make new stuff.</p>
 
   <p>Small tweaks for not looking like dog shit on mobile (small) screens. I really need to learn to do this as I go because tacking it on after is way more annoying.</p>
