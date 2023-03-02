@@ -9,9 +9,23 @@ image:
 
 The official Year of Making Stuff Live Tracker™ is finally here, sort of. Still in progress so expect changes, but I suppose this is the rough shape of my accountability death pact page. <a href="/year-of-stuff/">I did a <strike>better</strike> job of explaining what this is all about here</a>.
 
-<div class="timeline">
+<div class="timeline current">
+
+  <h1><small>March</small></h1>
+
+  <p>I am doodlin' all over the place, trying to get a workable background scribble and/or another attempt for Slike. Does anybody remember how to have new ideas? I think I forgot.</p>
+
+</div>
+
+<div class="timeline full-28">
 
   <h1><small>February</small></h1>
+
+  <p>I'm really not keeping up my end of the bargain about posting these things when I make 'em, huh? Oh well! too bad! I guess I should hook FD up to IFTTT or whatever for posting on socials too but I am finding it incredibly difficult to give a shit about those. Anyway, <a href="https://fartdepot.biz/wrote/2023/02/28/">I made this one today</a>.</p>
+
+  <p>It's back to scribbling during meetings for me today. It's getting bigger but still needs to be a lot larger to convincingly fill in that huge forehead I built into the site.</p>
+
+  <p>I am intentionally holding off on starting any backend-type work for Slike because I know I will immediately fall down that rabbit hole and be so tired of the whole project that I just crank out the most generic Bootstrap UI ever seen and call it a day. Instead I made a prototype (incredibly liberal use of that word) UI based on a doodle I drew earlier and I'm glad I didn't spend too long on it, because it looks like ass. I don't like it! Back to the literal drawing board (medieval English term for iPad).</p>
 
   <p>I got the idea in my head to use section colors for the <code>&lt;meta name="theme-color"&gt;</code> on <a href="https://warrantynowvoid.com">WNV</a> posts which I thought would be a very simple update. Obviously, I was wrong and in the time since we've stopped posting, the build has gone to hell. I guess maybe using an EOL version of Ruby does have at least one drawback after all! Who knew? Anyway, seems like I'm stuck here, I would have to upgrade all the Ruby stuff and I think use a custom AWS build image with newer versions and that all sounds exhausting. So it looks like this will be a bigger project and these static html files will stay exactly as they were on July 21, 2022 until then. Fuck! Oops! It's fine the colors didn't actually look that great anyway.</p>
 

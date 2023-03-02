@@ -11,13 +11,19 @@ div.timeline {
   min-width: 300px;
   max-width: 1400px;
   margin: auto;
-  counter-reset: dayofmonth 26;
+
+  &.current{
+    counter-reset: dayofmonth 3;
+  }
 
   &.full-31{
     counter-reset: dayofmonth 32;    
   }
   &.full-30{
     counter-reset: dayofmonth 31;    
+  }
+  &.full-28{
+    counter-reset: dayofmonth 29;    
   }
 
   p {
