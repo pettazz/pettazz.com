@@ -13,7 +13,7 @@ div.timeline {
   margin: auto;
 
   &.current{
-    counter-reset: dayofmonth 3;
+    counter-reset: dayofmonth 12;
   }
 
   &.full-31{
@@ -50,6 +50,13 @@ div.timeline {
       color: #0a0e14;
       font-size: 3em;
       font-family: $heading-font;
+    }
+
+    &.skipped{
+      &:before {
+        content: 'x';
+        color: red;
+      }
     }
   }
   //odd number borders

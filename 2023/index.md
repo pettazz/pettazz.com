@@ -13,6 +13,26 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>March</small></h1>
 
+  <p><a href="https://fartdepot.biz/wrote/2023/03/11/" target="_blank">This one was kind of an experiment</a> in writing more dialogue-heavy, which is pretty outside my usual style of aggressive exposition. Don't get any ideas, this is not based on any particular real experience.</p>
+
+  <p>Doodles during meetings is all I have to offer you today I'm afraid.</p>
+
+  <p>Calendar events still elude me on Delphi. I'm using <a href="https://pypi.org/project/ics/" target="_blank">ics</a> to fetch my personal calendars and recurring events are coming to me in an absolutely inscrutable order/timing. Since the last time I worked on this years ago it looks like there's <a href="https://pypi.org/project/recurring-ical-events/" target="_blank">a promising new library</a> that aims to solve exactly my problems. But I've done enough harm to my brain for one day.</p>
+
+  <p>I still feel <em>unwell</em> but I did some more of that big doodle today. It's nearly big enough to test out so I can't wait to find that it looks like dog shit and that I wasted all this time on it.</p>
+
+  <p class="skipped">I don't like how colds seem to work these days, I can tell you that much for sure.</p>
+
+  <p class="skipped">I remain sick!</p>
+
+  <p class="skipped">I got sick!</p>
+
+  <p>Well at least I've decided on the basics of a color scheme for Slike, but I think I need to take a bit of a break from beating my head against a blank Pixelmator document. So instead it's back to Delphi again, rewriting the big nasty weather module from the old version with the new API and better design.</p>
+
+  <p>I am determined to make some kinda website design here. I have been messing around with the idea of "weather faces" and I realize exactly how silly that sounds but I did say I wanted to do something weird and different here! And yes, one of them is a cloud with sunglasses on, obviously.</p>
+
+  <p><a href="https://fartdepot.biz/wrote/2023/03/02/" target="_blank">I'm cheating a little on this one</a>; I started this a long time ago so it's actually sort of a rewrite of some existing stuff I never did anything with. Will it go anywhere, who knows! Knowing me, probably not.</p>
+
   <p>I am doodlin' all over the place, trying to get a workable background scribble and/or another attempt for Slike. Does anybody remember how to have new ideas? I think I forgot.</p>
 
 </div>
