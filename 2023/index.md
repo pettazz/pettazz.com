@@ -13,6 +13,12 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>March</small></h1>
 
+  <p>Don't tell anyone but while I release software into the wild I doodle nonsense on my iPad. Today I drew a toilet. And some other things. But mostly toilet.</p>
+
+  <p>Shocking news: I appear to have broken the Raspberry Pi I intend to use for Delphi yet again. It seems to keep losing its network connection or maybe just the IP lease for some reason. I can reset it but then it just fails again after a while. I think I have to just get a newer 4, but I also don't remember like 90% of what I did to set this thing up in the first place so that should be fun.</p>
+
+  <p>Poking around with the <code>recurring-ical-events</code> library seems pretty good at first look, but the issues with <code>ics</code> weren't apparent until it was left running for a while anwyay, so we'll see how it goes.</p>
+
   <p><a href="https://fartdepot.biz/wrote/2023/03/11/" target="_blank">This one was kind of an experiment</a> in writing more dialogue-heavy, which is pretty outside my usual style of aggressive exposition. Don't get any ideas, this is not based on any particular real experience.</p>
 
   <p>Doodles during meetings is all I have to offer you today I'm afraid.</p>
