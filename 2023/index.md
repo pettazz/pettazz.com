@@ -13,7 +13,7 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>March</small></h1>
 
-  <p>Don't tell anyone but while I release software into the wild I doodle nonsense on my iPad. Today I drew a toilet. And some other things. But mostly toilet.</p>
+  <p>Don't tell anyone but while I release software into the wild I doodle nonsense on my iPad. Today I drew a toilet. And some other things. But mostly toilet. You can see it in the background on the home page of known web site <a href="https://fartdepot.biz/" target="_blank">Fart Depot dot Biz</a>. I'm thrilled with how it turned out, it's exactly the kind of chaotic nonsense I was hoping for, and I'm sure will only get better as it expands and I can start scrolling it.</p>
 
   <p>Shocking news: I appear to have broken the Raspberry Pi I intend to use for Delphi yet again. It seems to keep losing its network connection or maybe just the IP lease for some reason. I can reset it but then it just fails again after a while. I think I have to just get a newer 4, but I also don't remember like 90% of what I did to set this thing up in the first place so that should be fun.</p>
 
