@@ -13,6 +13,22 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>March</small></h1>
 
+  <p>Truly an incredible week for doodles, honestly.</p>
+
+  <p>How did I ever survive meetings without this? Was I simply braindead?</p>
+
+  <p>Back to meetings, back to doodlings. It's nice having two different gears of doodle to work on now: one intentionally mindless nonsense and one a little more focused, which pretty accurately describes most of my meetings anyway.</p>
+
+  <p>Starting yet another something new here, which is working through the incredible backlog of, let's say, "professional" books I've accumulated over the past few years. I am calling it the Dumbass Learning Series today and today only because that name sucks, but I have a bunch of books like <a href="https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/" target="_blank">Designing Data-Intensive Applications</a> and <a href="https://gameprogrammingpatterns.com" target="_blank">Game Programming Patterns</a> that I have been meaning to read through for years, but because I am the way that I am, I need some kind of particular structure to make it stick. I think that will more or less be doing some silly blag posts about them as I go.</p>
+
+  <p>Man you can really tell what sort of media I have been consuming recently based on <a href="https://fartdepot.biz/wrote/2023/03/18/" target="_blank">the particular stuff I am making</a>.</p>
+
+  <p>I am so glad I put that ghost that is legally distinct from a Boo if Nintendo asks on a different layer so I could move it later because this is much better. I can't update the banner background on the site yet until the collage expands in full rectangular steps, but I hope to do that soon.</p>
+
+  <p>My lovely collage of chaos now includes a rough sketch of the first real computer I ever used: our family Sony VAIO PC running Windows 95, the apex of 1996 technology featuring the blazing fast 199mHz Pentium CPU, an unthinkable 32 MB of RAM, and a spacious 4 GB HDD. Someone asked me a question while I was drawing it and I was so lost in its magnificence that I had to pretend my headphones cut out and needed them to repeat the question.</p>
+
+  <p>Since the whole thing just runs on a docker image with a very basic nginx instance, the Fart Depot dot Biz error pages are bland as hell. What a wonderful opportunity to waste some time and effort! It's easy enough to define them between the Dockerfile and included nginx.conf, but why stop at "normal page that says uh oh" when I could make it confusing and overstylized? So yes, I have begun drawing two images which will be my 4xx and 5xx error pages.</p>
+
   <p>Don't tell anyone but while I release software into the wild I doodle nonsense on my iPad. Today I drew a toilet. And some other things. But mostly toilet. You can see it in the background on the home page of known web site <a href="https://fartdepot.biz/" target="_blank">Fart Depot dot Biz</a>. I'm thrilled with how it turned out, it's exactly the kind of chaotic nonsense I was hoping for, and I'm sure will only get better as it expands and I can start scrolling it.</p>
 
   <p>Shocking news: I appear to have broken the Raspberry Pi I intend to use for Delphi yet again. It seems to keep losing its network connection or maybe just the IP lease for some reason. I can reset it but then it just fails again after a while. I think I have to just get a newer 4, but I also don't remember like 90% of what I did to set this thing up in the first place so that should be fun.</p>
