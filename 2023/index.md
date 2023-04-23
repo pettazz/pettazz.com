@@ -11,7 +11,16 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
 <div class="timeline current">
 
+  <h1><small>April</small></h1>
+
+  <p>Hello I slowly, tentatively easing myself back into the pool of <code>content</code> once again one toe at a time. Hopefully it's warmer than I remember. Anyway, here's <a href="https://fartdepot.biz/wrote/2023/04/23/"  target="_blank">a particularly cold return</a>.</p>
+
+</div>
+
+<div class="timeline full-22">
   <h1><small>March</small></h1>
+
+  <p class="skipped">I had a shitty month! I am neither gonna talk about it nor put the correct number of Xs on here! Oh well!</p>
 
   <p>Truly an incredible week for doodles, honestly.</p>
 
