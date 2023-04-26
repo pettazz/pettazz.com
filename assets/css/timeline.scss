@@ -13,7 +13,7 @@ div.timeline {
   margin: auto;
 
   &.current{
-    counter-reset: dayofmonth 24;
+    counter-reset: dayofmonth 27;
   }
 
   &.full-31{

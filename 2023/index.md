@@ -13,6 +13,12 @@ The official Year of Making Stuff Live Tracker™ is finally here, sort of. Stil
 
   <h1><small>April</small></h1>
 
+  <p>Okay so this could actually work, think of it like clock with 24 hours and "now" always at the 12 position. We'll calculate the patent pending Slike Score™ for each interval (probably hour but that'll depend on the API data resolution) and have sort of a corona around the clock that expands further out the higher the score at that time. It'll be like a big, uneven drawing of the sun that hopefully makes it immediately obvious what times are good and bad. I sketched out a little demo for myself and I actually like it for once so I'm running with this feeling immediately before it goes away. The only problem is that I have absolutely no idea how to make such a shape exist programmatically, but hey one thing at a time.</p>
+
+  <p>Trying to think of a fun way to show an upcoming 24 hour period for Slike I decided that maybe "a clock" is a new technology I could look into: a round device with each hour printed in order proceding around the circumference, each one representing that particular time span. Clever! Maybe I can make it suck somehow!</p>
+
+  <p>We have decisively returned to the daily doodles. The mosaic of insanity grows.</p>
+
   <p>Hello I slowly, tentatively easing myself back into the pool of <code>content</code> once again one toe at a time. Hopefully it's warmer than I remember. Anyway, here's <a href="https://fartdepot.biz/wrote/2023/04/23/"  target="_blank">a particularly cold return</a>.</p>
 
 </div>
