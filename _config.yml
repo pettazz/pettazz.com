@@ -2,8 +2,8 @@
 
 title:            pettazz'n
 locale:           en_US
-url:              https://pettazz.com
-host:             pettazz.com
+url:              http://localhost:4000
+host:             localhost
 
 # Jekyll configuration
 
@@ -33,8 +33,8 @@ owner:
   email: website@nick.pettazzoni.com
   # disqus-shortname: pettazz
   twitter: pettazz
-  mastodon: https://toot.osto.us/@pettazz
-  facebook: #username
+  # mastodon: https://toot.osto.us/@pettazz
+  # facebook: #username
   bing-verify: 
   github: pettazz
   stackoverflow: 431223/pettazz
@@ -52,6 +52,8 @@ owner:
   flickr: #username
   reddit: pettazz
   untappd: pettazz
+  goodreads: pettazz
+  strava: pettazz
 
 include: [".htaccess"]
 exclude: ["lib", ".bundle", ".vendor", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
