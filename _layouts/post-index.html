@@ -34,38 +34,13 @@
   </div>
   <div id="index">
     <h1>{{ page.title }}</h1>
-    {% for post in site.posts %}  
-    {% unless post.next %}
-      <h3>{{ post.date | date: '%Y' }}</h3>
-      {% else %}
-        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-        {% if year != nyear %}
-          <h3>{{ post.date | date: '%Y' }}</h3>
-        {% endif %}
-      {% endunless %}
-      <article>
-        <div class="index-header-wrapper" data-index-header-image=
-          {% if post.image.feature %}
-            {% if post.image.feature contains 'http' %}
-                "{{ post.image.feature }}"
-              {% else %}
-                "{{ site.url }}/images/{{ post.image.feature }}"
-              {% endif %}
-            {% endif %} >
-          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><h1>{{ post.title }}</h1></a>
-        </div>
-        {% if post.link %}
-          <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
-        {% else %}
-          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
-            {% if post.tagline %}<h2>{{ post.tagline }}</h2>{% endif %}
-            <p>{{ post.excerpt | strip_html }}</p>
-          </a>
-        {% endif %}
-        <p class="post-meta">Posted on {{ post.date | date: "%B %d, %Y" }}{% if post.modified %}, Updated on {{ post.modified | date: "%B %d, %Y" }}{% endif %}</p>
-      </article>
-    {% endfor %}
+    {% if page.category_index %}
+      {% assign posts = site.categories[page.category_index] %}
+    {% else %}
+      {% assign posts = site.posts %}
+    {% endif %}
+    {% include _post-list.html %}
+
   </div><!-- /#index -->
 </div><!-- /#main -->
 
