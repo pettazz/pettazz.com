@@ -10,8 +10,18 @@ image:
 The official Year of Making Stuff Live Tracker™ is finally here, sort of. Still in progress so expect changes, but I suppose this is the rough shape of my accountability death pact page. <a href="/year-of-stuff/">I did a <strike>better</strike> job of explaining what this is all about here</a>.
 
 <div class="timeline current">
+  
+  <p>Wow August already, can you believe it? Crazy that comes right after May 17 these days but here we are. </p>
+
+</div>
+
+<div class="timeline full-17">
 
   <h1><small>May</small></h1>
+
+  <p>Today in Doodle City, I am trying to draw some weirdo medieval book margin animal guys and they're coming out weird in a new and different way. I could've really innovated some new ideas in 1560 I am sure of it.</p>
+
+  <p>Now that I have a working (enough) backend here I think it's time to take the frontend a little more seriously and figure out how to make that design I had in mind. After spending some time poking around various js graphics libraries, I'm even more lost than I was before. I've never had a great brain for graphics coding specifically, so maybe this is where I either finally actually learn how to do it or just quit and do something different. Who knows!</p>
 
   <p>Doodlin' once again. Every time I think I'm going to run out of ideas for pointless shapes or objects, I surprise myself when a new one simply *happens*.</p>
 
