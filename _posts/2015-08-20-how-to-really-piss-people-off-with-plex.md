@@ -12,7 +12,7 @@ As I've mentioned a few times, I have a [PLEX](http://plex.tv) server full of de
 
 ![Shitty Plex On Deck](/images/plex-garbage.png "Ugh.")
 
-Please, stop. We're all worried about you.
+> Please, stop. We're all worried about you.
 {: .notice}
 
 On the downside, this also makes it somewhat harder to lock things down. I'm not particularly interested in subsidizing the TV and movie watching habits of friends of friends and people I will never meet, especially if there's any question about the legality of any of the content (which of course there isn't; everything I have is [totally public domain for sure definitely 100%](https://en.wikipedia.org/wiki/List_of_films_in_the_public_domain_in_the_United_States)). I don't want to be wasting precious CPU cycles and upload bandwidth so that someone from sixteen states over can watch *Ted 2* sixty-five times. Unfortunately, PLEX using the library sharing feature only allows me to restrict by section per user. So if a friend logs into one of their friends' Roku once, as long as they don't log out, they have access to all the same things that my friend does. My sharing dashboard doesn't even allow me to see what devices are being used under different accounts, even though that's completely available in the logs ([or a shiny log parsing web frontend](https://github.com/ljunkie/plexWatch)). This just isn't acceptable to my power-hungry server admin persona.

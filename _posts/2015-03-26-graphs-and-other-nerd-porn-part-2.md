@@ -9,7 +9,7 @@ image: nerd_porn_graphs.png
 ---
 
 
-Previously, on Graphs and Other Nerd Porn: [Part 1](/graphs-and-other-nerd-porn)
+> Previously, on Graphs and Other Nerd Porn: [Part 1](/graphs-and-other-nerd-porn)
 {: .notice}
 
 So here I am, with a bunch of graphs showing me that once in a while on my server, the load average goes up and the temperature follows. Big damn deal. <!--more-->What good is any of this if I can't get some kind of insight into what's causing it? I mean, what am I going to do if the temp graph suddenly shows 80, go get an ice pack and put it on top of the power supply? 
@@ -43,7 +43,7 @@ sessions = plex.query('/status/sessions')
 print 'sessions:' + sessions.get('size')
 {% endhighlight %}
 
-¹ I realize that a PLEX session doesn't necessarily equal a transcode session, but I'd rather include every streaming session in the graph than exclude anything potentially useful. It still uses CPU, and I don't want to be desperately grepping syslog about a spike in load because my graph excludes the sixteen people streaming a 4K movie over Direct Play.
+> ¹ I realize that a PLEX session doesn't necessarily equal a transcode session, but I'd rather include every streaming session in the graph than exclude anything potentially useful. It still uses CPU, and I don't want to be desperately grepping syslog about a spike in load because my graph excludes the sixteen people streaming a 4K movie over Direct Play.
 {: .notice}
 
 Slap a ``chmod +x`` on there and drop it into ``/usr/local/bin/``, and my data source is ready to serve.

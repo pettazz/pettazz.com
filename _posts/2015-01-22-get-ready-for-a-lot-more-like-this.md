@@ -21,5 +21,5 @@ What the hell does that mean, and why am I posting it on the internet and wastin
 
 So, welcome to the new blag-o-blag, and enjoy your stay. Or don't. I don't really give a shit. (It's working!)
 
-**BTW** In my efforts to make sure I got the "idunnolol" guy right above, Google directed me to the most vital of articles I have ever seen, from the highly respected news magazine, The Atlantic: [The Best Way to Type ¯\\\_(ツ)\_/¯](http://www.theatlantic.com/technology/archive/2014/05/the-best-way-to-type-__/371351/). The internet is a super goddamned goofy place. 
+> **BTW** In my efforts to make sure I got the "idunnolol" guy right above, Google directed me to the most vital of articles I have ever seen, from the highly respected news magazine, The Atlantic: [The Best Way to Type ¯\\\_(ツ)\_/¯](http://www.theatlantic.com/technology/archive/2014/05/the-best-way-to-type-__/371351/). The internet is a super goddamned goofy place. 
 {: .notice}

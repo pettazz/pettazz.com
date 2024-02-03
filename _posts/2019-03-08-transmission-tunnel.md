@@ -134,7 +134,7 @@ After that, we need to add firewall rules that both prevent Transmission's traff
 /usr/sbin/ufw insert 1 reject in on enp7s0 to any port $PORT
 {% endhighlight %}
 
-Make sure to replace `enp7s0` with whatever your actual usual network interface is. 
+> > Make sure to replace `enp7s0` with whatever your actual usual network interface is. 
 {: .notice}
 
 We use the port that Transmission sends all its traffic through as an easy and reliable shortcut to differentiate it from any other network traffic. We tell `ufw` to create rules rejecting any traffic through that port in or out on the normal interface.
@@ -285,5 +285,5 @@ You're safe and secure, but there are a few things to know about your wondrous n
 **You might go mad with power**
 :   Knowing that you're incredibly safe and secure and impervious to being tracked by absolutely every entity in the world\*, you may feel a sense of infallibility that only gods have known before. You may start to experience time and space differently than mere mortals and transcend beyond the point of needing to use such a primitive device as a computer anymore. In which case please @ me on twitter so I can have your stuff.
 
-\*Completely and utterly factually inaccurate. Cannot overstate how not true that is.
+> \*Completely and utterly factually inaccurate. Cannot overstate how not true that is.
 {: .notice}

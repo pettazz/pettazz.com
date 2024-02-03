@@ -154,7 +154,7 @@ Now we'll update our virtual host to support SSL. Certbot may have made some or 
 </VirtualHost>
 {% endhighlight %}
 
-Certbot may wrap your whole configuration in an `<IfModule mod_ssl.c>` block just to avoid startup issues on servers where it's not fully supported, but since the goal here is SSL or bust, I think it's fine to make Apache fail to even start up if SSL is not properly supported.
+> Certbot may wrap your whole configuration in an `<IfModule mod_ssl.c>` block just to avoid startup issues on servers where it's not fully supported, but since the goal here is SSL or bust, I think it's fine to make Apache fail to even start up if SSL is not properly supported.
 {: .notice}
 
 The main things to note here are that our VirtualHost is now listening on `*:443` for HTTPS, rather than HTTP's port 80, and we've added a few top level directives that enable SSL, and point it to our certificates. 
@@ -281,7 +281,7 @@ After these changes, this is my complete example Apache virtual host conf:
 
 Note that for Ombi, I want it to be publicly available and manage authentication on its own, not using my `htpasswd` admin login, so I also added a `<Location /ombi>` block to exclude it from basic auth.
 
-Remember to restart Apache after any config changes (`sudo apache2ctl restart`)! The number of combined hours I've wasted trying to figure out why my new config change doesn't work when it's just because Apache hasn't reloaded it is truly embarrassing.
+> Remember to restart Apache after any config changes (`sudo apache2ctl restart`)! The number of combined hours I've wasted trying to figure out why my new config change doesn't work when it's just because Apache hasn't reloaded it is truly embarrassing.
 {: .notice}
 
 ## Safe and Secure

@@ -30,7 +30,7 @@ And so we come to the entire reason for this post. How the hell do you tell mvn 
 - writing a separate Jenkins job that only contains a python script to parse the xml file and trigger the actual job, passing the parsed values as build parameters 
 - blood magicks
 
-Links redacted to protect the innocent on StackOverflow, but I swear these are all real things people actually proposed as solutions.
+> Links redacted to protect the innocent on StackOverflow, but I swear these are all real things people actually proposed as solutions.
 {: .notice}
 
 Deeply unwilling to try any of these options (I mean, seriously, _Groovy_? Gross.), we developed a somewhat less sophisticated method:

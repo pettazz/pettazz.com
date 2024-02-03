@@ -10,7 +10,7 @@ image: 2023.jpg
 
 Imagine my surprise waking up today to find that it is now the year 2023. Despite having a theoretical understanding the constant and inevitable forward march of time, I still wouldn't say I have a working knowledge of it and end up being absolutely blown away by it continuing to happen. I guess I'm just really good at being a frog boiled slowly in a pot or whatever, especially in the sense that realizing too much time has passed will probably happen when I'm already dead. Anyway, happy new year!<!--more-->
 
-Accountability tracker and/or death pact enumerator [is now live](/2023/).
+> Accountability tracker and/or death pact enumerator [is now live](/2023/).
 {: .notice .author-note}
 
 Unsurprisingly, I have big ambitions for this year that I did absolutely nothing to prepare for, so this is still an idea under a fair bit of construction. Please bear with me while I build this plane as I'm flying it. Inspired by a friend's **Thing A Week** grand plan and the better part of a year simply `consuming` media of all kinds, I've got an incredible itch to make some of my own again, a thing I used to do all the time! So let's call this the year of making stuff. Any kind of stuff, any kind of quality. I'm going to post it on the internet every day, but only as a sort of accountability mechanism, not because I necessarily think it's worth showing even one other soul out there. Maybe I'll come up with some good stuff but pretty likely I'm just gonna crank out some real stinky garbage. But the whole point is to do it more often. I'm here to exercise the creativity muscles regularly so they get big and beefy and I can actually make stuff I *do* like. 
@@ -21,5 +21,5 @@ I have a bad habit of making these sort of ambitious goals for myself and then g
 
 Welcome to 2023: the Year of Making Stuff. Maybe Day Two should be coming up with a better name. 
 
-Header photo by <a href="https://unsplash.com/@planetvolumes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Planet Volumes</a> on <a href="https://unsplash.com/photos/v_CQ10cps_Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+> Header photo by <a href="https://unsplash.com/@planetvolumes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Planet Volumes</a> on <a href="https://unsplash.com/photos/v_CQ10cps_Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 {: .notice}

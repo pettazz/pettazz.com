@@ -32,5 +32,5 @@ It's still my website and my aribtrary bullshit, so the "rules" such as they are
 Since I didn't decide to do this until about 60% of the way through January (despite what the published date on this post might say), January's project is a little bit of a cop out, but will come in handy for the rest of the year. I've set up a [Projects Page](/projects/) and finally wrote up one for the biggest I've worked on in a while. I'll make a point to post about the 2024 projects here when they're finished.
 {: .notice .author-note}
 
-Header photo by <a href="https://unsplash.com/@eyestetix?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Eyestetix Studio</a> on <a href="https://unsplash.com/photos/a-dark-background-with-the-numbers-2012-and-a-reflection-on-the-floor-TLPcOg-fnSI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+> Header photo by <a href="https://unsplash.com/@eyestetix?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Eyestetix Studio</a> on <a href="https://unsplash.com/photos/a-dark-background-with-the-numbers-2012-and-a-reflection-on-the-floor-TLPcOg-fnSI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 {: .notice}
