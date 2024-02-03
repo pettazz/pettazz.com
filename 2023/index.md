@@ -3,8 +3,7 @@ layout: timeline
 title: "2023: A Busy Year"
 comments: false
 share: false
-image:
-  feature: 2023.jpg
+image: 2023.jpg
 ---
 
 The official Year of Making Stuff Live Tracker™ is finally here, sort of. Still in progress so expect changes, but I suppose this is the rough shape of my accountability death pact page. <a href="/year-of-stuff/">I did a <strike>better</strike> job of explaining what this is all about here</a>.

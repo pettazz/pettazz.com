@@ -5,8 +5,7 @@ title: Graphs and Other Nerd Porn, Part 2
 tagline: "Now that I can see how hot my server is, I want to see what the hell is causing it."
 tags: [blag, ubuntu, server, cacti, rrdtool, sensors, plex, linux, graphs, mysql]
 comments: true
-image:
-  feature: nerd_porn_graphs.png
+image: nerd_porn_graphs.png
 ---
 
 

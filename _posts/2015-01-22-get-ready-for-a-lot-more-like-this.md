@@ -5,8 +5,7 @@ title: Get Ready For A Lot More Like This
 tagline: "It's my new blag, so check it out or whatever."
 tags: [personal, blag, broken promises, giving a shit]
 comments: true
-image:
-  feature: idgaf_llama_notext.png
+image: idgaf_llama_notext.png
 ---
 
 

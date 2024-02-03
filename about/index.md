@@ -4,8 +4,7 @@ title: About
 tags: [about, personal]
 comments: true
 share: false
-image:
-  feature: fenway_night_from_bleachers.jpg
+image: fenway_night_from_bleachers.jpg
 ---
 
 I made a blag that I don't use very much. Maybe I'll update this page eventually.

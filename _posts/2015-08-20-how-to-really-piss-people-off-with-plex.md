@@ -5,8 +5,7 @@ title: How to Really Piss People Off With Plex
 tagline: "Unauthorized users will be force-fed mom's spaghetti."
 tags: [blag, plex, ubuntu, squid, python, being unnecessarily mean]
 comments: true
-image:
-  feature: spaghetti.jpg
+image: spaghetti.jpg
 ---
 
 As I've mentioned a few times, I have a [PLEX](http://plex.tv) server full of delicious, nutritious content. Thanks to an update some time ago, I can easily share this content with my friends and family [via their own PLEX accounts](https://support.plex.tv/hc/en-us/sections/200295083-Server-Sharing), so that I don't have to go handing out my server admin login info, or deal with seeing suggestions for all the stupid crap they watch. <!--more-->

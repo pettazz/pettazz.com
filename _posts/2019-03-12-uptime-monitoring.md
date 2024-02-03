@@ -5,8 +5,7 @@ title: Uptime Monitoring
 tagline: "You gotta know it"
 tags: [blag, alonso, homelab, apache]
 comments: true
-image:
-  feature: network.jpg
+image: network.jpg
 ---
 
 

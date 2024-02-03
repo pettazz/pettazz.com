@@ -5,8 +5,7 @@ title: Maven Being Maven
 tagline: "Maven? Adding totally unnecessary complexity to what should otherwise be a very simple task? No way!"
 tags: [blag, maven, java, Jenkins, build, mvn]
 comments: true
-image:
-  feature: maven.png
+image: maven.png
 ---
 
 In my real job, we use Jenkins to build our junk. Actually, two instances of Jenkins (don't ask). Actually, two instances of Jenkins that write artifacts to a Maven repository and also to a special location in Perforce (seriously, don't ask). We live in a strange world somewhere between a number of build tools and processes standardized within the company and usually end up using some combination of them that we duct tape together with some python code, shell scripts, and happy thoughts. <!--more-->

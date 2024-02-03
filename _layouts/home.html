@@ -13,17 +13,17 @@
 
 {% include _navigation.html %}
 
-{% if page.image.feature %}
+{% if page.image %}
   <div class="image-wrap">
   <img src=
-    {% if page.image.feature contains 'http' %}
-      "{{ page.image.feature }}"
+    {% if page.image contains 'http' %}
+      "{{ page.image }}"
     {% else %}
-      "{{ site.url }}/images/{{ page.image.feature }}"
+      "{{ site.url }}/images/{{ page.image }}"
     {% endif %}
   alt="{{ page.title }} feature image">
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% if page.imageCredit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.imageCredit.link }}">{{ page.imageCredit.display }}</a></span>
   {% endif %}
   </div><!-- /.image-wrap -->
 {% endif %}
@@ -37,11 +37,11 @@
     {% for post in site.posts limit:6 %}    
     <article>
       <div class="index-header-wrapper" data-index-header-image=
-        {% if post.image.feature %}
-          {% if post.image.feature contains 'http' %}
-              "{{ post.image.feature }}"
+        {% if post.image %}
+          {% if post.image contains 'http' %}
+              "{{ post.image }}"
             {% else %}
-              "{{ site.url }}/images/{{ post.image.feature }}"
+              "{{ site.url }}/images/{{ post.image }}"
             {% endif %}
           {% endif %} >
         <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><h1>{{ post.title }}</h1></a>

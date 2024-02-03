@@ -10,11 +10,11 @@
       {% endunless %}
       <article>
         <div class="index-header-wrapper" data-index-header-image=
-          {% if post.image.feature %}
-            {% if post.image.feature contains 'http' %}
-                "{{ post.image.feature }}"
+          {% if post.image %}
+            {% if post.image contains 'http' %}
+                "{{ post.image }}"
               {% else %}
-                "{{ site.url }}/images/{{ post.image.feature }}"
+                "{{ site.url }}/images/{{ post.image }}"
               {% endif %}
             {% endif %} >
           <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><h1>{{ post.title }}</h1></a>

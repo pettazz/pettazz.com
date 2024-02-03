@@ -15,18 +15,18 @@
 
 <div class="image-wrap">
   <img
-    {% if page.image.feature %}
-      {% if page.image.feature contains 'http' %}
-          src="{{ page.image.feature }}"
+    {% if page.image %}
+      {% if page.image contains 'http' %}
+          src="{{ page.image }}"
       {% else %}
-          src="{{ site.url }}/images/{{ page.image.feature }}"
+          src="{{ site.url }}/images/{{ page.image }}"
       {% endif %}
     {% else %}
           class="random-header"
     {% endif %}
   alt="{{ page.title }} feature image">
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% if page.imageCredit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.imageCredit.link }}">{{ page.imageCredit.display }}</a></span>
   {% endif %}
 </div><!-- /.image-wrap -->
 

@@ -6,8 +6,7 @@ title: "This Time It's 2024"
 tagline: ""
 tags: [blag, 2023, 2024, Year of Making Stuff, content, creative]
 comments: true
-image:
-  feature: 2024.jpg
+image: 2024.jpg
 ---
 
 Okay, so. Maybe something every day was a little aggressive. Maybe this year we'll do something more realistic. Maybe the whole concept of forcing creative output into a rigid calendar-based timeline is always doomed to fail and is the wrong way to try to motivate it. Yeah, sure, maybe. Oh well, can't think of a better way to do it so here we go again!<!--more-->

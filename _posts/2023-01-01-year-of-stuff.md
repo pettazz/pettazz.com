@@ -5,8 +5,7 @@ title: "2023: The Year of Making Stuff"
 tagline: "I really need to come up with a better name if I'm going to stick with this."
 tags: [blag, 2023, Year of Making Stuff]
 comments: true
-image:
-  feature: 2023.jpg
+image: 2023.jpg
 ---
 
 Imagine my surprise waking up today to find that it is now the year 2023. Despite having a theoretical understanding the constant and inevitable forward march of time, I still wouldn't say I have a working knowledge of it and end up being absolutely blown away by it continuing to happen. I guess I'm just really good at being a frog boiled slowly in a pot or whatever, especially in the sense that realizing too much time has passed will probably happen when I'm already dead. Anyway, happy new year!<!--more-->
