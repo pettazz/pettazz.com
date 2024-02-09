@@ -11,7 +11,7 @@ imageCredit:
   
 ---
 
-In a highly scientific study I have determined that he most common blog post in the world is the one where the author claims they're going to start posting more because they like it and they were recently reminded about how much they like it so now it's time to get back at it. These posts are very easily identified because they're often the only ones on their respective websites every few years. <!--more-->
+In a highly scientific study I have determined that he most common blog post in the world is the one where the author claims they're going to start posting more because they like it and they were recently reminded about how much they like it so now it's time to get back at it. These posts are very easily identified because they're often the only ones on their respective websites every few years.
 
 Anyway, I'm going to be posting here more. 
 

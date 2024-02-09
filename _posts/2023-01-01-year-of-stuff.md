@@ -8,7 +8,7 @@ comments: true
 image: 2023.jpg
 ---
 
-Imagine my surprise waking up today to find that it is now the year 2023. Despite having a theoretical understanding the constant and inevitable forward march of time, I still wouldn't say I have a working knowledge of it and end up being absolutely blown away by it continuing to happen. I guess I'm just really good at being a frog boiled slowly in a pot or whatever, especially in the sense that realizing too much time has passed will probably happen when I'm already dead. Anyway, happy new year!<!--more-->
+Imagine my surprise waking up today to find that it is now the year 2023. Despite having a theoretical understanding the constant and inevitable forward march of time, I still wouldn't say I have a working knowledge of it and end up being absolutely blown away by it continuing to happen. I guess I'm just really good at being a frog boiled slowly in a pot or whatever, especially in the sense that realizing too much time has passed will probably happen when I'm already dead. Anyway, happy new year!
 
 > Accountability tracker and/or death pact enumerator [is now live](/2023/).
 {: .notice .author-note}

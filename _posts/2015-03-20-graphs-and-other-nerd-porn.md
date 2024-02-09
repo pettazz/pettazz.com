@@ -9,7 +9,9 @@ image: nerd_porn_graphs.png
 ---
 
 
-There's a guy named Alonso who lives in my living room, and lately he's been making a lot more noise than he used to.<!--more--> He's actually an Ubuntu Server who runs my instances of [PLEX](http://plex.tv) and [Sonarr](http://sonarr.tv), so it's a little less weird but still makes me worry. His fans used to run at a pretty constant rate until recently when he started interrupting my favorite shows by preparing for takeoff and setting his fans to Max Power.
+There's a guy named Alonso who lives in my living room, and lately he's been making a lot more noise than he used to.
+
+He's actually an Ubuntu Server who runs my instances of [PLEX](http://plex.tv) and [Sonarr](http://sonarr.tv), so it's a little less weird but still makes me worry. His fans used to run at a pretty constant rate until recently when he started interrupting my favorite shows by preparing for takeoff and setting his fans to Max Power.
 
 ![MAX POWER](http://i.imgur.com/Iq1Y0Hl.jpg "But you mustn't touch!")
 

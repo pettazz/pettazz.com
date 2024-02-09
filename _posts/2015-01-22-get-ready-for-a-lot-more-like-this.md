@@ -9,7 +9,9 @@ image: idgaf_llama_notext.png
 ---
 
 
-When I started doing this, I thought the point was to give the internet at large some vastly unique, indescribably earth-shattering content that would draw you all in for some reason, much like Christopher Walken reading Goodnight Moon, begging all you children to scooch closer.<!--more--> So every time I opened up my trusty markdown editor to begin writing a post that would inevitably change the very fundamentals of how each of you perceive the world around you, I came up blank. I have at least six files in my posts directory that are `published: false` with nothing but an ASCII art dick here and a few of these guys there:
+When I started doing this, I thought the point was to give the internet at large some vastly unique, indescribably earth-shattering content that would draw you all in for some reason, much like Christopher Walken reading Goodnight Moon, begging all you children to scooch closer.
+
+So every time I opened up my trusty markdown editor to begin writing a post that would inevitably change the very fundamentals of how each of you perceive the world around you, I came up blank. I have at least six files in my posts directory that are `published: false` with nothing but an ASCII art dick here and a few of these guys there:
    
 >¯\\\_(ツ)\_/¯
     

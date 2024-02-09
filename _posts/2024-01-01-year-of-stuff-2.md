@@ -9,7 +9,7 @@ comments: true
 image: 2024.jpg
 ---
 
-Okay, so. Maybe something every day was a little aggressive. Maybe this year we'll do something more realistic. Maybe the whole concept of forcing creative output into a rigid calendar-based timeline is always doomed to fail and is the wrong way to try to motivate it. Yeah, sure, maybe. Oh well, can't think of a better way to do it so here we go again!<!--more-->
+Okay, so. Maybe something every day was a little aggressive. Maybe this year we'll do something more realistic. Maybe the whole concept of forcing creative output into a rigid calendar-based timeline is always doomed to fail and is the wrong way to try to motivate it. Yeah, sure, maybe. Oh well, can't think of a better way to do it so here we go again!
 
 I wouldn't necessarily call the [2023 Year of Making Stuff](/year-of-stuff/) a *failure* exactly; I did make a lot of stuff, and I knew going into it that it was going to be tough to keep up with such a demanding target. And it's my own made up game on my own website with my own name on it so I get to decide the rules anyway. At the very least it was one of those valuable learning experiences I hear so much about. It certainly helped me crystallize what my actual goals with something like this are, and feeling guilty about not doing enough on time is decidedly not one of them. 
 

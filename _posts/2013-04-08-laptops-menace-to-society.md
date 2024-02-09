@@ -6,7 +6,7 @@ tags: [lols, fun, laptops, computers, making shit up]
 comments: true
 ---
 
-Today I'd like to address a serious and growing concern, becoming especially prevalent among college students who are now, just as I was a few years ago, too cheap/poor/cool to have proper furniture: Burning down their dorms by leaving laptops on their beds. [This is a trend](http://bostonherald.com/news_opinion/local_coverage/2013/04/laptop_goes_up_in_flames) that is destroying lives and student housing across the country, but could be easily stopped if we all just took a moment to become educated about the issue and the devices we often spend so much time using.<!--more-->
+Today I'd like to address a serious and growing concern, becoming especially prevalent among college students who are now, just as I was a few years ago, too cheap/poor/cool to have proper furniture: Burning down their dorms by leaving laptops on their beds. [This is a trend](http://bostonherald.com/news_opinion/local_coverage/2013/04/laptop_goes_up_in_flames) that is destroying lives and student housing across the country, but could be easily stopped if we all just took a moment to become educated about the issue and the devices we often spend so much time using.
 
 For my readers who are not computer scientists, I will describe in a high-level view the inner workings of your average laptop computer.
 
