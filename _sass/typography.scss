@@ -119,7 +119,6 @@ blockquote.notice {
 	padding: .5em 1em;
 	text-indent: 0;
 	font-style: normal;
-	@include font-rem(14);
 	background-color: $body-color;
 	border-left: none;
 	border: 1px solid darken($body-color,20);
@@ -147,6 +146,7 @@ blockquote.notice {
 
 	p{
 		margin-bottom: 0px;
+		@include font-rem(16);
 	}
 }
 
@@ -163,7 +163,8 @@ blockquote.notice {
 // --------------------------------------------------
 p {
 	margin: 0 0 $indent-var;
-	line-height: 140%;
+	line-height: 150%;
+	font-size: 18px;
 	// sibling indentation
   @if $paragraph-indent == true {
     & + p {
@@ -180,9 +181,11 @@ tt, code, kbd, samp, pre {
 }
 p,
 li,
+dt,
 dd { 
+	@include font-size(18);
 	code {
-		@include font-rem(12);
+		@include font-size(16);
 		line-height: 1.5;
 		white-space: nowrap;
 		margin: 0 2px;

@@ -134,7 +134,7 @@ After that, we need to add firewall rules that both prevent Transmission's traff
 /usr/sbin/ufw insert 1 reject in on enp7s0 to any port $PORT
 {% endhighlight %}
 
-> > Make sure to replace `enp7s0` with whatever your actual usual network interface is. 
+> Make sure to replace `enp7s0` with whatever your actual usual network interface is. 
 {: .notice}
 
 We use the port that Transmission sends all its traffic through as an easy and reliable shortcut to differentiate it from any other network traffic. We tell `ufw` to create rules rejecting any traffic through that port in or out on the normal interface.
