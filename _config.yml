@@ -2,6 +2,7 @@
 
 title:            pettazz'n
 locale:           en_US
+timezone:         America/New_York
 url:              https://pettazz.com
 host:             pettazz.com
 
