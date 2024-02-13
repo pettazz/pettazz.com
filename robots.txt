@@ -1,0 +1,27 @@
+User-agent: *
+Sitemap: https://pettazz.com/sitemap.xml
+Disallow: /assets/
+Disallow: /images/
+Disallow: /stylesheets/
+
+# AI crawlers go to hell
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-agent: omgili
+Disallow: /
+User-agent: FacebookBot
+Disallow: /
+User-agent: cohere-ai
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: Bytespider
+Disallow: /
