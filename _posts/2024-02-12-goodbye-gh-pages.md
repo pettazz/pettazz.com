@@ -23,7 +23,7 @@ If a surprise change on the platform suddenly means I am completely blocked from
 
 GitHub Pages is for the most part a pretty low-stakes example of this sort of thing; most people are not running critical parts of their infrastructure on there, but just because something isn't *critical* doesn't mean it's not valuable. I like posting my silly little posts and when I can't do it, it frustrates me. Many, many projects publish their documentation via Pages, so they may be incorrect or outdated after a release. Everything is some amount of important to someone, otherwise we wouldn't bother putting it up on the internet in the first place.
 
-This mess is an object lesson in two things: 
+It's not a problem exclusive to Pages and if anything they've probably been better about it than most for the near-decade of relative stability; I've only had to bang my head against a few updates like this here and there throughout the years. But this mess is an object lesson in two things: 
 
 1. Letting someone else take full control over your build, deploy, and host pipeline is always a dangerous proposition. They have to maintain their platform and that means it can't languish away. Security updates and EOLs are a fact of life, and they're not going to risk running some exploitable old code just because you've depended on it since 2012. 
 
