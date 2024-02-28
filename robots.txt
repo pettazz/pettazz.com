@@ -1,5 +1,6 @@
 User-agent: *
 Sitemap: https://pettazz.com/sitemap.xml
+Disallow: /p/
 
 # AI crawlers go to hell
 User-agent: GPTBot
