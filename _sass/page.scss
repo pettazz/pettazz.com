@@ -639,20 +639,23 @@ $button-size: 1.5rem;
   (youtube, $youtube-color);
   @each $socialnetwork, $color in $social {
     .#{$socialnetwork} {
-      background: $color;
+      // background: $color;
     }    
   }
   a {
+  	background: #ff8f40;
+	  border-radius: 3px;
 	  padding: 8px 20px;
 	  text-decoration: none !important;
 	  text-transform: uppercase;
-	  @include font-rem(14);
 	  font-family: $heading-font;
 	  font-weight: 400;
 	  color: $white !important;
-	  opacity: 0.8;
+    opacity: 1;
+    transition: background 0.75s ease;
 	  &:hover {
-	    opacity: 1;
+		  opacity: 0.8;
+	    cursor: pointer;
 	  }
 	}
 	h4 {

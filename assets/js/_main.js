@@ -46,8 +46,9 @@ $(function() {
 // Add lightbox class to all image links
 $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
 
-// Magnific-Popup options
+
 $(document).ready(function() {
+  // Magnific-Popup options
   $('.image-popup').magnificPopup({
     type: 'image',
     tLoading: 'Loading image #%curr%...',
@@ -64,4 +65,42 @@ $(document).ready(function() {
     // make it unique to apply your CSS animations just to this exact popup
     mainClass: 'mfp-fade'
   });
+
+  //sharing links
+  const copyLinkFallback = (shareData) => {
+    const dummy = document.createElement('input'),
+          url = shareData.url;
+
+    document.body.appendChild(dummy);
+    dummy.value = url;
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+
+    const prev = $('#share-button').html(),
+          restoreButton = () => {
+            $('#share-button').html(prev)
+                              .css('background-color', '#ff8f40');
+          }
+
+    $('#share-button').html('<i class="fas fa-check-circle"></i> Link copied!')
+                      .css('background-color','#36c434');
+    setTimeout(restoreButton, 5000);
+
+  }
+
+  $('a.share-link').click(async () =>{
+    const shareData = {
+      title: $('title').text(),
+      text: $('meta[name=description]').attr('content'),
+      url: $('link[rel=canonical]').attr('href')
+    };
+
+    if(!navigator.canShare){
+      copyLinkFallback(shareData);
+    }else{
+      await navigator.share(shareData);
+    }    
+  });
 });
+
