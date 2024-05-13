@@ -1,7 +1,6 @@
 ---
 layout: post
 published: true
-modified: 2024-03-06
 title: "Participatrophy"
 tagline: "I came here to do two things: lose and feel okay about losing."
 tags: [blag, opinions, politics, age, leftism, generations]
