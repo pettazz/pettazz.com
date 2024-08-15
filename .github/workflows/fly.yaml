@@ -6,22 +6,15 @@ on:
 env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
   SECRETS_CONTEXT: ${{ toJson(secrets) }}
-  ALL_SECRETS: ""
 jobs:
   deploy:
       name: Deploy app
       runs-on: ubuntu-latest
       steps:
+        - uses: actions/checkout@v3
+        - uses: superfly/flyctl-actions/setup-flyctl@master
         - run: |
             format_env() { jq -r "to_entries[] | \"export \(.key)='\(.value)'\n\""; }
             [[ "$SECRETS_CONTEXT" != "null" ]] && ENV_SECRETS="$(echo $SECRETS_CONTEXT | format_env)"
             ALL_SECRETS=$(echo "$ENV_SECRETS" | base64 --wrap=0)
-            echo $ALL_SECRETS
-            WHY="what is even happening anymore"
-
-        - uses: actions/checkout@v3
-        - uses: superfly/flyctl-actions/setup-flyctl@master
-        - run: |
-            echo "why: $WHY"
-            echo "all: $ALL_SECRETS"
-            flyctl deploy --remote-only --build-secret "ALL_SECRETS=$(echo $ALL_SECRETS)" --build-secret "WHY=$(echo $WHY)"
+            flyctl deploy --remote-only --build-secret "ALL_SECRETS=$ALL_SECRETS"
