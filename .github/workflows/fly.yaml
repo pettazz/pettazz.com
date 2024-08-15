@@ -14,8 +14,8 @@ jobs:
         - run: |
             EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
             to_envs() { jq -r "to_entries[] | \"\(.key)<<$EOF\n\(.value)\n$EOF\n\""; }
-            [[ ! -z "$VARS_CONTEXT" ]] && echo "$VARS_CONTEXT" | to_envs >> $GITHUB_ENV
-            [[ ! -z "$SECRETS_CONTEXT" ]] && echo "$SECRETS_CONTEXT" | to_envs >> $GITHUB_ENV
+            [[ "$VARS_CONTEXT" != "null" ]] && echo "$VARS_CONTEXT" | to_envs >> $GITHUB_ENV
+            [[ "$SECRETS_CONTEXT" != "null" ]] && echo "$SECRETS_CONTEXT" | to_envs >> $GITHUB_ENV
         - uses: actions/checkout@v3
         - uses: superfly/flyctl-actions/setup-flyctl@master
         - run: flyctl deploy --remote-only
