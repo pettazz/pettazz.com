@@ -9,7 +9,6 @@ COPY . .
 
 # interpolate secrets
 RUN --mount=type=secret,id=ALL_SECRETS \
-    echo "dir: $(ls -la /run/secrets/)" &&\
     echo "file: $(cat /run/secrets/ALL_SECRETS)" &&\
     echo "all: $(base64 -d /run/secrets/ALL_SECRETS)" &&\
     eval "$(base64 -d /run/secrets/ALL_SECRETS)" && \
