@@ -4,18 +4,12 @@ on:
     branches:
       - main
 env:
-  SECRETS_CONTEXT: ${{ toJson(secrets) }}
-  VARS_CONTEXT: ${{ toJson(vars) }}
+  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 jobs:
   deploy:
       name: Deploy app
       runs-on: ubuntu-latest
       steps:
-        - run: |
-            EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
-            to_envs() { jq -r "to_entries[] | \"\(.key)<<$EOF\n\(.value)\n$EOF\n\""; }
-            [[ "$VARS_CONTEXT" != "null" ]] && echo "$VARS_CONTEXT" | to_envs >> $GITHUB_ENV
-            [[ "$SECRETS_CONTEXT" != "null" ]] && echo "$SECRETS_CONTEXT" | to_envs >> $GITHUB_ENV
         - uses: actions/checkout@v3
         - uses: superfly/flyctl-actions/setup-flyctl@master
         - run: flyctl deploy --remote-only
