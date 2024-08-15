@@ -42,7 +42,7 @@ owner:
   linkedin: pettazz
   instagram: pettazz
   lastfm: noodpope
-  tumblr: $ENV_VAR_TEST
+  tumblr: #username
   pinterest: #username
   foursquare: #username
   steam: pettazz
@@ -50,7 +50,7 @@ owner:
   youtube: pettazz
   soundcloud: #username
   weibo: #username
-  flickr: ${ENV_VAR_TEST}
+  flickr: #username
   reddit: pettazz
   untappd: pettazz
   goodreads: pettazz
@@ -84,3 +84,7 @@ exclude: [
     "LICENSE",
     "README.md"
 ]
+
+
+test1: $ENV_VAR_TEST
+test2: ${ENV_VAR_TEST}
