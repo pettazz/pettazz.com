@@ -8,8 +8,7 @@ WORKDIR /build-zone
 COPY . .
 
 RUN --mount=type=secret,id=WHY \
-    echo "file: $(cat /run/secrets/WHY)" &&\
-    echo "all: $(base64 -d /run/secrets/WHY)" &&\
+    echo "whyfile: $(cat /run/secrets/WHY)"
 
 
 # interpolate secrets
