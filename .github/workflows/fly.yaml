@@ -12,7 +12,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - run: |
-            format_env() { jq -r "to_entries[] | \"export \(.key)='\(.value)'\""; }
+            format_env() { jq -r "to_entries[] | \"export \(.key)='\(.value)'\\n""; }
             [[ "$SECRETS_CONTEXT" != "null" ]] && ENV_SECRETS="$(echo $SECRETS_CONTEXT | format_env)"
             echo $ENV_SECRETS
             echo $ENV_SECRETS | base64 --wrap=0
