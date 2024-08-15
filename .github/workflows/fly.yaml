@@ -11,9 +11,8 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - run: |
-            ALL_SECRETS=""
             format_env() { jq -r "to_entries[] | \"export \(.key)=\(.value)\""; }
-            [[ "$SECRETS_CONTEXT" != "null" ]] && echo "$SECRETS_CONTEXT" | format_env >> $ALL_SECRETS
+            [[ "$SECRETS_CONTEXT" != "null" ]] && ALL_SECRETS="$(echo "$SECRETS_CONTEXT" | format_env)"
         - uses: actions/checkout@v3
         - uses: superfly/flyctl-actions/setup-flyctl@master
         - run: flyctl deploy --remote-only --build-secret "ALL_SECRETS=$(echo $ALL_SECRETS | base64 --wrap=0)"
