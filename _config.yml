@@ -16,6 +16,7 @@ sass:
   style: compressed
 plugins:
   - jekyll-sitemap
+  - jekyll-darkvisitors
 
 kramdown:
   auto_ids: true
@@ -23,6 +24,10 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
+
+darkvisitors:
+  append_existing: true
+  access_token: $DARK_VISITORS_TOKEN
 
 # excerpt_separator: <!--more-->
 
