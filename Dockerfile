@@ -7,10 +7,6 @@ WORKDIR /build-zone
 
 COPY . .
 
-
-RUN --mount=type=secret,id=MYTEST \
-    echo "MYTEST: $(cat /run/secrets/MYTEST)"
-
 # interpolate secrets
 RUN --mount=type=secret,id=ALL_SECRETS \
     echo "all: $(base64 -d /run/secrets/ALL_SECRETS)" &&\
