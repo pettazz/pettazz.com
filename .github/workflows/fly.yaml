@@ -5,6 +5,7 @@ on:
       - main
 env:
   SECRETS_CONTEXT: ${{ toJson(secrets) }}
+  ALL_SECRETS: ""
 jobs:
   deploy:
       name: Deploy app
