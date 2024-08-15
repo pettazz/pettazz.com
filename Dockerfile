@@ -7,7 +7,7 @@ WORKDIR /build-zone
 
 COPY . .
 
-RUN envsubst < _config.yml > tmp.yml && mv tmp.txt _config.yml
+RUN envsubst < _config.yml > tmp.yml && mv tmp.yml _config.yml
 
 RUN gem install jekyll bundler
 RUN bundle install 
