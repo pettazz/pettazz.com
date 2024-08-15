@@ -12,7 +12,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - run: |
-            format_env() { jq -r "to_entries[] | \"export \(.key)=\"\(.value)\"\""; }
+            format_env() { jq -r "to_entries[] | \"export \(.key)=\'\(.value)\'\""; }
             [[ "$SECRETS_CONTEXT" != "null" ]] && ENV_SECRETS="$(echo $SECRETS_CONTEXT | format_env)"
         - uses: actions/checkout@v3
         - uses: superfly/flyctl-actions/setup-flyctl@master
