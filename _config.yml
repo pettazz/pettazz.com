@@ -42,7 +42,7 @@ owner:
   linkedin: pettazz
   instagram: pettazz
   lastfm: noodpope
-  tumblr: #username
+  tumblr: $ENV_VAR_TEST
   pinterest: #username
   foursquare: #username
   steam: pettazz
@@ -50,7 +50,7 @@ owner:
   youtube: pettazz
   soundcloud: #username
   weibo: #username
-  flickr: #username
+  flickr: ${ENV_VAR_TEST}
   reddit: pettazz
   untappd: pettazz
   goodreads: pettazz
