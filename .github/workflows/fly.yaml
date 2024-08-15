@@ -12,7 +12,7 @@ jobs:
       steps:
         - run: |
             format_env() { jq -r "to_entries[] | \"export \(.key)=\(.value)\""; }
-            [[ "$SECRETS_CONTEXT" != "null" ]] && ALL_SECRETS="$(echo "$SECRETS_CONTEXT" | format_env)"
+            [[ "$SECRETS_CONTEXT" != "null" ]] && ENV_SECRETS="$(echo "$SECRETS_CONTEXT" | format_env)"
         - uses: actions/checkout@v3
         - uses: superfly/flyctl-actions/setup-flyctl@master
-        - run: flyctl deploy --remote-only --build-secret "ALL_SECRETS=$(echo $ALL_SECRETS | base64 --wrap=0)"
+        - run: flyctl deploy --remote-only --build-secret "ALL_SECRETS=$(echo $ENV_SECRETS | base64 --wrap=0)"
