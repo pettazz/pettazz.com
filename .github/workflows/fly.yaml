@@ -21,4 +21,4 @@ jobs:
 
         - uses: actions/checkout@v3
         - uses: superfly/flyctl-actions/setup-flyctl@master
-        - run: flyctl deploy --remote-only --build-secret "ALL_SECRETS=$ALL_SECRETS" --build-secret "WHY=$WHY"
+        - run: flyctl deploy --remote-only --build-secret "ALL_SECRETS=$(echo $ALL_SECRETS)" --build-secret "WHY=$(echo $WHY)"
