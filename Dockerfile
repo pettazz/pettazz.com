@@ -1,11 +1,13 @@
 # build it
 FROM ruby:3.1.3 AS builder
 
+RUN apt-get update && apt-get install gettext -y
+
 WORKDIR /build-zone
 
 COPY . .
 
-envsubst < _config.yml > tmp.yml && mv tmp.txt _config.yml
+RUN envsubst < _config.yml > tmp.yml && mv tmp.txt _config.yml
 
 RUN gem install jekyll bundler
 RUN bundle install 
