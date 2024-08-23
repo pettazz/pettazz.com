@@ -79,7 +79,10 @@ A boolean that tells the plugin how to handle an existing robots.txt file in you
 #### `agent_types`
 
 This is a list of agent types to request from Dark Visitors. You might want to try to block only scrapers that will feed your content into the machine while allowing searches and assistants to still have access, or any other combination.
-- `disallow`: This path will be used to generate the `Disallow` directive for each agent, so if you want to block their access to the whole site, leave it as-is with a simple `/`, or get more speciifc as needed.
+ 
+#### `disallow`
+
+This path will be used to generate the `Disallow` directive for each agent, so if you want to block their access to the whole site, leave it as-is with a simple `/`, or get more speciifc as needed.
 
 ### Jekyll Cache
 
