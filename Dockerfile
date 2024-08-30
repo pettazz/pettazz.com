@@ -10,8 +10,8 @@ COPY . .
 # interpolate secrets
 RUN --mount=type=secret,id=ALL_SECRETS \
     eval "$(base64 -d /run/secrets/ALL_SECRETS)" && \
-    envsubst < _config.yml > tmp.yml && mv tmp.yml _config.yml && \
-    envsubst < nginx.conf > tmp.conf && mv tmp.conf nginx.conf
+    envsubst -v < _config.yml > tmp.yml && mv tmp.yml _config.yml && \
+    envsubst -v < nginx.conf > tmp.conf && mv tmp.conf nginx.conf
 
 RUN gem install jekyll bundler
 RUN bundle install 
