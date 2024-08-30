@@ -27,7 +27,7 @@ kramdown:
 
 darkvisitors:
   append_existing: true
-  access_token: $DARKVISITORS_TOKEN
+  access_token: ${DARK_VISITORS_TOKEN}
 
 # excerpt_separator: <!--more-->
 
@@ -89,7 +89,3 @@ exclude: [
     "LICENSE",
     "README.md"
 ]
-
-
-test1: $ENV_VAR_TEST
-test2: ${ENV_VAR_TEST}

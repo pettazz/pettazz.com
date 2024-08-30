@@ -11,7 +11,6 @@ COPY . .
 RUN --mount=type=secret,id=ALL_SECRETS \
     eval "$(base64 -d /run/secrets/ALL_SECRETS)" && \
     export VARS="$(env | cut -d= -f1 | sed -e 's/^/$/')" && \
-    echo $VARS && \
     envsubst "$VARS" < _config.yml > tmp.yml && mv tmp.yml _config.yml && \
     envsubst "$VARS" < nginx.conf > tmp.conf && mv tmp.conf nginx.conf
 
