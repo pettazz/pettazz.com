@@ -69,6 +69,9 @@ exclude: [
     "lib",
     ".bundle",
     ".vendor",
+    ".gitignore",
+    ".dockerignore",
+    ".github",
     "config.rb",
     "Capfile",
     "config",
@@ -83,9 +86,13 @@ exclude: [
     "spec",
     "Gruntfile.js",
     "package.json",
+    "package-lock.json",
     "node_modules",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "nginx.conf",
+    "fly.toml"
+    "Dockerfile"
 ]
