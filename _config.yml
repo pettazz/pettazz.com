@@ -93,6 +93,6 @@ exclude: [
     "LICENSE",
     "README.md",
     "nginx.conf",
-    "fly.toml"
+    "fly.toml",
     "Dockerfile"
 ]
