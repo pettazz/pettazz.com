@@ -23,6 +23,6 @@ FROM openresty/openresty:alpine AS runner
 WORKDIR /app
 
 COPY --from=builder /build-zone/_site/ ./
-COPY --from=builder nginx.conf /etc/nginx/conf.d/site.conf
+COPY --from=builder /build-zone/nginx.conf /etc/nginx/conf.d/site.conf
 
 EXPOSE 8080
