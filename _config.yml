@@ -27,7 +27,7 @@ kramdown:
 
 darkvisitors:
   append_existing: true
-  access_token: ${DARKVISITORS_TOKEN}
+  access_token: $DARKVISITORS_TOKEN
 
 # excerpt_separator: <!--more-->
 
