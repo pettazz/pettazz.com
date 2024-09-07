@@ -28,6 +28,9 @@ kramdown:
 darkvisitors:
   append_existing: true
   access_token: ${DARK_VISITORS_TOKEN}
+  agent_types:
+    - AI Data Scraper
+    - Undocumented AI Agent
 
 # excerpt_separator: <!--more-->
 
