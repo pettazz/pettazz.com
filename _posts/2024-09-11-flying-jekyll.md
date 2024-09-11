@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: "Flying Jekyll"
-tagline: "Churning out static sites like "
+tagline: "Call me Van de Graaff the way I'm generating static sites over here"
 tags: [blag, jekyll, fly.io, github, hosting, platforms, flying-jekyll, lua, nginx, docker]
 comments: true
 category: projects
