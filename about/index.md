@@ -7,8 +7,8 @@ share: false
 image: fenway_night_from_bleachers.jpg
 ---
 
-I made a blag that I don't use very much. Maybe I'll update this page eventually.
+I made a blag that I don't use very much. I'm the dog in the avatar on the left. 
 
-I'm the dog in the avatar on the left.
+This blagoblag was originally based on the [Minimal Mistakes Theme](http://mmistakes.github.io/minimal-mistakes) but has been so hacked up it may not resemble it anymore.
 
-This blagoblag uses the [Minimal Mistakes Theme](http://mmistakes.github.io/minimal-mistakes).
+I'll put my resume here when I finish working on it too. Won't that be exciting!
