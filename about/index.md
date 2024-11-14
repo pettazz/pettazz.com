@@ -11,4 +11,4 @@ I made a blag that I don't use very much. I'm the dog in the avatar on the left.
 
 This blagoblag was originally based on the [Minimal Mistakes Theme](http://mmistakes.github.io/minimal-mistakes) but has been so hacked up it may not resemble it anymore.
 
-I'll put my resume here when I finish working on it too. Won't that be exciting!
+And here is my resume if you're into that sort of thing: [resume.pdf](/resume.pdf)
