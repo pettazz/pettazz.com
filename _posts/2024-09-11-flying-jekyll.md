@@ -201,6 +201,7 @@ This way if a secret isn't set, or if some other similarly formatted string (i.e
 
 Our GitHub Actions workflow definition `fly.yaml`:
 
+{% raw %}
 ```yaml
 name: Fly Deploy
 on:
@@ -223,6 +224,7 @@ jobs:
             ALL_SECRETS=$(echo "$ENV_SECRETS" | base64 --wrap=0)
             flyctl deploy --remote-only --build-secret "ALL_SECRETS=$ALL_SECRETS"
 ```
+{% endraw %}
 
 The `builder` portion of our Dockerfile:
 
